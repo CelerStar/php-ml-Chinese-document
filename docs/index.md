@@ -1,4 +1,4 @@
-# PHP-ML - Machine Learning library for PHP
+# PHP-ML——机器学习PHP库
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.0-8892BF.svg)](https://php.net/)
 [![Latest Stable Version](https://img.shields.io/packagist/v/php-ai/php-ml.svg)](https://packagist.org/packages/php-ai/php-ml)
@@ -10,11 +10,11 @@
 
 ![PHP-ML - Machine Learning library for PHP](assets/php-ml-logo.png)
 
-Fresh approach to Machine Learning in PHP. Algorithms, Cross Validation, Preprocessing, Feature Extraction and much more in one library.
+使用PHP语言构建的新的机器学习方法。包括相关算法,交叉验证、预处理、特征提取和更多的机器学习的函数库。
 
-PHP-ML requires PHP >= 7.0.
+PHP-ML 需要 PHP >= 7.0.
 
-Simple example of classification:
+简单的例子分类:
 ```php
 use Phpml\Classification\KNearestNeighbors;
 
@@ -28,55 +28,55 @@ $classifier->predict([3, 2]);
 // return 'b'
 ```
 
-## Documentation
+## 文档
 
-To find out how to use PHP-ML follow [Documentation](http://php-ml.readthedocs.org/).
+如何使用 PHP-ML 请阅读以下 [文档](http://php-ml.readthedocs.org/).
 
-## Installation
+## 安装
 
-Currently this library is in the process of developing, but You can install it with Composer:
+目前这个库是在发展的过程中,但你可以自行安装它
 
 ```
 composer require php-ai/php-ml
 ```
 
-## Examples
+## 示例
 
-Example scripts are available in a separate repository [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples).
+示例脚本放在一个单独的存储库 [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples).
 
-## Features
+## 特征
 
-* Association rule Lerning
+* 关联性规则学习
     * [Apriori](machine-learning/association/apriori/)
-* Classification
+* 分类
     * [SVC](machine-learning/classification/svc/)
     * [k-Nearest Neighbors](machine-learning/classification/k-nearest-neighbors/)
     * [Naive Bayes](machine-learning/classification/naive-bayes/)
-* Regression
+* 回归
     * [Least Squares](machine-learning/regression/least-squares/)
     * [SVR](machine-learning/regression/svr/)
-* Clustering
+* 聚类
     * [k-Means](machine-learning/clustering/k-means/)
     * [DBSCAN](machine-learning/clustering/dbscan/)
-* Metric
+* 指标
     * [Accuracy](machine-learning/metric/accuracy/)
     * [Confusion Matrix](machine-learning/metric/confusion-matrix/)
     * [Classification Report](machine-learning/metric/classification-report/)
-* Workflow
+* 工作流
     * [Pipeline](machine-learning/workflow/pipeline)
-* Neural Network
+* 神经网络
     * [Multilayer Perceptron](machine-learning/neural-network/multilayer-perceptron/)
     * [Backpropagation training](machine-learning/neural-network/backpropagation/)
-* Cross Validation
+* 交叉验证
     * [Random Split](machine-learning/cross-validation/random-split/)
     * [Stratified Random Split](machine-learning/cross-validation/stratified-random-split/)
-* Preprocessing
+* 预处理
     * [Normalization](machine-learning/preprocessing/normalization/)
     * [Imputation missing values](machine-learning/preprocessing/imputation-missing-values/)
-* Feature Extraction
+* 特征提取
     * [Token Count Vectorizer](machine-learning/feature-extraction/token-count-vectorizer/)
     * [Tf-idf Transformer](machine-learning/feature-extraction/tf-idf-transformer/)
-* Datasets
+* 数据集
     * [Array](machine-learning/datasets/array-dataset/)
     * [CSV](machine-learning/datasets/csv-dataset/)
     * [Files](machine-learning/datasets/files-dataset/)
@@ -84,26 +84,26 @@ Example scripts are available in a separate repository [php-ai/php-ml-examples](
         * [Iris](machine-learning/datasets/demo/iris/)
         * [Wine](machine-learning/datasets/demo/wine/)
         * [Glass](machine-learning/datasets/demo/glass/)
-* Models management
+* 模型管理
     * [Persistency](machine-learning/model-manager/persistency/)
-* Math
+* 数学
     * [Distance](math/distance/)
     * [Matrix](math/matrix/)
     * [Set](math/set/)
     * [Statistic](math/statistic/)
     
 
-## Contribute
+## 贡献
 
-- Issue Tracker: github.com/php-ai/php-ml/issues
-- Source Code: github.com/php-ai/php-ml
+- 问题追踪: github.com/php-ai/php-ml/issues
+- 源代码: github.com/php-ai/php-ml
 
-You can find more about contributing in [CONTRIBUTING.md](CONTRIBUTING.md).
+你可以找到更多关于贡献 [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## License
+## 许可证
 
-PHP-ML is released under the MIT Licence. See the bundled LICENSE file for details.
+PHP-ML MIT许可下发布。 有关详细信息,请参阅捆绑许可证文件。
 
-## Author
+## 作者
 
 Arkadiusz Kondas (@ArkadiuszKondas)
