@@ -2,7 +2,7 @@
 
 学习基于关联规则 [Apriori algorithm](https://en.wikipedia.org/wiki/Apriori_algorithm) 的频繁项集挖掘。
 
-### 构造函数参数
+### Constructor Parameters
 
 * $support - [confidence](https://en.wikipedia.org/wiki/Association_rule_learning#Support), 最小相对频繁项目集的训练样本
 * $confidence - [confidence](https://en.wikipedia.org/wiki/Association_rule_learning#Confidence), 最小相对数量的项目集频繁项集

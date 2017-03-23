@@ -2,7 +2,7 @@
 
 分类器实现再邻居算法。
 
-## 构造函数参数
+## Constructor Parameters
 
 * $k - 最近的临近扫描数量n (默认: 3)
 * $distanceMetric - 距离对象, 默认欧几里得 (查阅 [distance documentation](../../math/distance.md))

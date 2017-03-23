@@ -8,6 +8,10 @@
 [![License](https://poser.pugx.org/php-ai/php-ml/license.svg)](https://packagist.org/packages/php-ai/php-ml)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/php-ai/php-ml/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/php-ai/php-ml/?branch=develop)
 
+#### 本文档由 赛灵开源技术研发社区 维护
+#### 参与汉化项目地址
+#### https://github.com/CelerStar/php-ml-Chinese-document
+
 ![PHP-ML - Machine Learning library for PHP](assets/php-ml-logo.png)
 
 使用PHP语言构建的新的机器学习方法。包括相关算法,交叉验证、预处理、特征提取和更多的机器学习的函数库。

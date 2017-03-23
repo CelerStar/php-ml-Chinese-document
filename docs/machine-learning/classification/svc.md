@@ -2,7 +2,7 @@
 
 基于libsvm实现支持向量机分类器。
 
-### 构造函数参数
+### Constructor Parameters
 
 * $kernel (int) - 内核类型使用的算法 (默认 Kernel::LINEAR)
 * $cost (float) - 参数 C of C-SVC (默认 1.0)

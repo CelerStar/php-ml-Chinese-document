@@ -1,38 +1,38 @@
-site_name: PHP-ML - Machine Learning library for PHP
+site_name: PHP-ML - 机器学习PHP库
 pages:
-  - Home: index.md
-  - Machine Learning:
-    - Association rule learning:
+  - 首页: index.md
+  - 机器学习:
+    - 关联性规则学习:
       - Apriori: machine-learning/association/apriori.md
-    - Classification:
+    - 分类:
       - SVC: machine-learning/classification/svc.md
       - KNearestNeighbors: machine-learning/classification/k-nearest-neighbors.md
       - NaiveBayes: machine-learning/classification/naive-bayes.md
-    - Regression:
+    - 回归:
       - LeastSquares: machine-learning/regression/least-squares.md
       - SVR: machine-learning/regression/svr.md
-    - Clustering:
+    - 聚类:
       - KMeans: machine-learning/clustering/k-means.md
       - DBSCAN: machine-learning/clustering/dbscan.md
-    - Metric:
+    - 指标:
       - Accuracy: machine-learning/metric/accuracy.md
       - Confusion Matrix: machine-learning/metric/confusion-matrix.md
       - Classification Report: machine-learning/metric/classification-report.md
-    - Workflow:
+    - 工作流:
       - Pipeline: machine-learning/workflow/pipeline.md
-    - Neural Network:
+    - 神经网络:
       - Multilayer Perceptron: machine-learning/neural-network/multilayer-perceptron.md
       - Backpropagation training: machine-learning/neural-network/backpropagation.md
-    - Cross Validation:
+    - 交叉验证:
       - RandomSplit: machine-learning/cross-validation/random-split.md
       - Stratified Random Split: machine-learning/cross-validation/stratified-random-split.md
-    - Preprocessing:
+    - 预处理:
       - Normalization: machine-learning/preprocessing/normalization.md
       - Imputation missing values: machine-learning/preprocessing/imputation-missing-values.md
-    - Feature Extraction:
+    - 特征提取:
       - Token Count Vectorizer: machine-learning/feature-extraction/token-count-vectorizer.md
       - Tf-idf Transformer: machine-learning/feature-extraction/tf-idf-transformer.md
-    - Datasets:
+    - 数据集:
       - Array Dataset: machine-learning/datasets/array-dataset.md
       - CSV Dataset: machine-learning/datasets/csv-dataset.md
       - Files Dataset: machine-learning/datasets/files-dataset.md
@@ -40,9 +40,9 @@ pages:
         - Iris: machine-learning/datasets/demo/iris.md
         - Wine: machine-learning/datasets/demo/wine.md
         - Glass: machine-learning/datasets/demo/glass.md
-    - Models management:
+    - 模型管理:
         - Persistency: machine-learning/model-manager/persistency.md
-  - Math:
+  - 数学:
     - Distance: math/distance.md
     - Matrix: math/matrix.md
     - Set: math/set.md
