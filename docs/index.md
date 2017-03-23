@@ -9,8 +9,8 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/php-ai/php-ml/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/php-ai/php-ml/?branch=develop)
 
 #### 本文档由 赛灵开源技术研发社区 维护
-#### 参与汉化项目地址
-#### [https://github.com/CelerStar/php-ml-Chinese-document](https://github.com/CelerStar/php-ml-Chinese-document "https://github.com/CelerStar/php-ml-Chinese-document")
+#### [汉化文档项目地址](https://github.com/CelerStar/php-ml-Chinese-document "参与汉化项目地址")
+#### [PHP-ML QQ交流群 ](//shang.qq.com/wpa/qunwpa?idkey=c382507594312f54366fb1f6878a98ab9868eb99c327a78bdb76de505ed5637d "PHP-ML QQ交流群 ")
 
 ![PHP-ML - Machine Learning library for PHP](assets/php-ml-logo.png)
 
