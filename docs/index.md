@@ -10,9 +10,10 @@
 
 #### 本文档由 赛灵开源技术研发社区 维护
 #### [汉化文档项目地址](https://github.com/CelerStar/php-ml-Chinese-document "参与汉化项目地址")
-#### [PHP-ML QQ交流群 ](//shang.qq.com/wpa/qunwpa?idkey=c382507594312f54366fb1f6878a98ab9868eb99c327a78bdb76de505ed5637d "PHP-ML QQ交流群 ")
+#### [PHP-ML QQ交流群 596635852](//shang.qq.com/wpa/qunwpa?idkey=c382507594312f54366fb1f6878a98ab9868eb99c327a78bdb76de505ed5637d "PHP-ML QQ交流群 ")
 
 ![PHP-ML - Machine Learning library for PHP](assets/php-ml-logo.png)
+![PHP-ML - QQ交流群](http://doc.celerstar.com/website/soft/php-ml/qq.png)
 
 使用PHP语言构建的新的机器学习方法。包括相关算法,交叉验证、预处理、特征提取和更多的机器学习的函数库。
 
