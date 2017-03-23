@@ -10,7 +10,7 @@
 
 #### 本文档由 赛灵开源技术研发社区 维护
 #### 参与汉化项目地址
-#### https://github.com/CelerStar/php-ml-Chinese-document
+#### [https://github.com/CelerStar/php-ml-Chinese-document](https://github.com/CelerStar/php-ml-Chinese-document "https://github.com/CelerStar/php-ml-Chinese-document")
 
 ![PHP-ML - Machine Learning library for PHP](assets/php-ml-logo.png)
 
