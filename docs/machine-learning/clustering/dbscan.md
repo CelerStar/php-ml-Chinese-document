@@ -1,13 +1,12 @@
 # DBSCAN clustering
 
-It is a density-based clustering algorithm: given a set of points in some space, it groups together points that are closely packed together (points with many nearby neighbors), marking as outliers points that lie alone in low-density regions (whose nearest neighbors are too far away). DBSCAN is one of the most common clustering algorithms and also most cited in scientific literature.
-*(source: wikipedia)*
+它是一种基于密度的聚类算法：给定一些空间中的一组点，将聚集在一起的点（多个邻近邻域的点）组合在一起，标记为低密度区域（最接近的区域）的离群点邻居离太远）。DBSCAN是最常见的聚类算法之一，也是科学文献中最引用的。 （来源：维基百科）
 
 ### Constructor Parameters
 
-* $epsilon - epsilon, maximum distance between two samples for them to be considered as in the same neighborhood
-* $minSamples - number of samples in a neighborhood for a point to be considered as a core point (this includes the point itself)
-* $distanceMetric - Distance object, default Euclidean (see [distance documentation](../../math/distance.md))
+* $epsilon - 两个样本之间的最大距离被认为在同一个识别区
+* $minSamples - 要被视为核心点的点的邻域中的样本数（这包括点本身）
+* $distanceMetric - 距离对象，默认欧几里德距离 (查看 [distance documentation](../../math/distance.md))
 
 ```
 $dbscan = new DBSCAN($epsilon = 2, $minSamples = 3);
@@ -16,7 +15,7 @@ $dbscan = new DBSCAN($epsilon = 2, $minSamples = 3, new Minkowski($lambda=4));
 
 ### Clustering
 
-To divide the samples into clusters simply use `cluster` method. It's return the `array` of clusters with samples inside.
+要将样本分成簇，只需使用 `cluster` 方法即可。它返回 `array` 带有样本的集群。
 
 ```
 $samples = [[1, 1], [8, 7], [1, 2], [7, 8], [2, 1], [8, 9]];

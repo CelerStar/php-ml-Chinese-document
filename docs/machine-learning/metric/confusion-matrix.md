@@ -1,10 +1,10 @@
 # Confusion Matrix
 
-Class for compute confusion matrix to evaluate the accuracy of a classification.
+用于计算混淆矩阵的类来评估分类的准确性。
 
 ### Example (all targets)
 
-Compute ConfusionMatrix for all targets.
+为所有目标计算ConfusionMatrix。
 
 ```
 use Phpml\Metric\ConfusionMatrix;
@@ -25,7 +25,7 @@ $confusionMatrix = [
 
 ### Example (chosen targets)
 
-Compute ConfusionMatrix for chosen targets.
+为所选目标计算ConfusionMatrix。
 
 ```
 use Phpml\Metric\ConfusionMatrix;

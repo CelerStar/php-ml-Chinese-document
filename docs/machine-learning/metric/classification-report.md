@@ -1,13 +1,13 @@
 # Classification Report
 
-Class for calculate main classifier metrics: precision, recall, F1 score and support.
+计算主分类器度量的类： precision, recall, F1 score and support.
 
 ### Report
 
-To generate report you must provide the following parameters:
+要生成报告，您必须提供以下参数：
 
 * $actualLabels - (array) true sample labels
-* $predictedLabels - (array) predicted labels (e.x. from test group)
+* $predictedLabels - (array) 预测标签（来自测试组）
 
 ```
 use Phpml\Metric\ClassificationReport;
@@ -20,12 +20,12 @@ $report = new ClassificationReport($actualLabels, $predictedLabels);
 
 ### Metrics
 
-After creating the report you can draw its individual metrics:
+创建报告后，您可以绘制其各自的指标：
 
-* precision (`getPrecision()`) - fraction of retrieved instances that are relevant
-* recall (`getRecall()`) - fraction of relevant instances that are retrieved
-* F1 score (`getF1score()`) - measure of a test's accuracy
-* support (`getSupport()`) - count of testes samples
+* precision (`getPrecision()`) - 相关的检索到的实例的分数
+* recall (`getRecall()`) - 检索到的相关实例的分数
+* F1 score (`getF1score()`) - 测试测试的准确性
+* support (`getSupport()`) - 测试样本数
 
 ```
 $precision = $report->getPrecision();

@@ -1,14 +1,14 @@
 # Accuracy
 
-Class for calculate classifier accuracy.
+用于计算分类器精度的类。
 
 ### Score
 
-To calculate classifier accuracy score use `score` static method. Parameters:
+计算分类器精度得分使用 `score` 静态方法。参数：
 
 * $actualLabels - (array) true sample labels
-* $predictedLabels - (array) predicted labels (e.x. from test group)
-* $normalize - (bool) normalize or not the result (default: true)
+* $predictedLabels - (array) 预测标签（来自测试组）
+* $normalize - (bool) normalize或not结果 (default: true)
 
 ### Example
 

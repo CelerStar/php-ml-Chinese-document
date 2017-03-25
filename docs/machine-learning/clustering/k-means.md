@@ -1,12 +1,11 @@
 # K-means clustering
 
-The K-Means algorithm clusters data by trying to separate samples in n groups of equal variance, minimizing a criterion known as the inertia or within-cluster sum-of-squares. 
-This algorithm requires the number of clusters to be specified.
+K-Means算法通过尝试分离n个相等方差组的样本来聚集数据，从而将称为惯性或簇内和平方的标准最小化。该算法需要指定簇的数量。
 
 ### Constructor Parameters
 
-* $clustersNumber - number of clusters to find
-* $initialization - initialization method, default kmeans++ (see below)
+* $clustersNumber - 要查找的群集数
+* $initialization - 初始化方法，默认kmeans ++（见下文）
 
 ```
 $kmeans = new KMeans(2);
@@ -15,7 +14,7 @@ $kmeans = new KMeans(4, KMeans::INIT_RANDOM);
 
 ### Clustering
 
-To divide the samples into clusters simply use `cluster` method. It's return the `array` of clusters with samples inside.
+要将样本分成簇，只需使用 `cluster` 方法即可。它返回 `array` 带有样本的集群。
 
 ```
 $samples = [[1, 1], [8, 7], [1, 2], [7, 8], [2, 1], [8, 9]];
@@ -29,9 +28,7 @@ $kmeans->cluster($samples);
 
 #### kmeans++ (default)
 
-K-means++ method selects initial cluster centers for k-mean clustering in a smart way to speed up convergence.
-It use the DASV seeding method consists of finding good initial centroids for the clusters.
-
+K-means ++方法以智能方式选择k-均值聚类的初始聚类中心，以加速收敛。它使用DASV播种方法包括为群集找到良好的初始质心。
 #### random
 
-Random initialization method chooses completely random centroid. It get the space boundaries to avoid placing clusters centroid too far from samples data.
+随机初始化方法选择完全随机的中心。它获得空间边界，以避免将集群中心与样本数据相距太远。
