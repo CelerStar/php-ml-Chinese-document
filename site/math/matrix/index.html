@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Matrix - PHP-ML - 机器学习PHP库</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Matrix";
+    var mkdocs_page_input_path = "math\\matrix.md";
+    var mkdocs_page_url = "/math/matrix/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PHP-ML - 机器学习PHP库</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">首页</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">机器学习</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <span class="caption-text">关联性规则学习</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/association/apriori/">Apriori</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">分类</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/classification/svc/">SVC</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/classification/k-nearest-neighbors/">KNearestNeighbors</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/classification/naive-bayes/">NaiveBayes</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">回归</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/regression/least-squares/">LeastSquares</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/regression/svr/">SVR</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">聚类</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/clustering/k-means/">KMeans</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/clustering/dbscan/">DBSCAN</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">指标</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/metric/accuracy/">Accuracy</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/metric/confusion-matrix/">Confusion Matrix</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/metric/classification-report/">Classification Report</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">工作流</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/workflow/pipeline/">Pipeline</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">神经网络</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/neural-network/multilayer-perceptron/">Multilayer Perceptron</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/neural-network/backpropagation/">Backpropagation training</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">交叉验证</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/cross-validation/random-split/">RandomSplit</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/cross-validation/stratified-random-split/">Stratified Random Split</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">预处理</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/preprocessing/normalization/">Normalization</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/preprocessing/imputation-missing-values/">Imputation missing values</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">特征提取</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/feature-extraction/token-count-vectorizer/">Token Count Vectorizer</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/feature-extraction/tf-idf-transformer/">Tf-idf Transformer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">数据集</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/datasets/array-dataset/">Array Dataset</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/datasets/csv-dataset/">CSV Dataset</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/datasets/files-dataset/">Files Dataset</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">Ready to use datasets</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../machine-learning/datasets/demo/iris/">Iris</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../machine-learning/datasets/demo/wine/">Wine</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../machine-learning/datasets/demo/glass/">Glass</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">模型管理</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/model-manager/persistency/">Persistency</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">数学</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../distance/">Distance</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Matrix</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#matrix">Matrix</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#creation">Creation</a></li>
+        
+            <li><a class="toctree-l4" href="#matrix-data">Matrix data</a></li>
+        
+            <li><a class="toctree-l4" href="#determinant">Determinant</a></li>
+        
+            <li><a class="toctree-l4" href="#transpose">Transpose</a></li>
+        
+            <li><a class="toctree-l4" href="#multiply">Multiply</a></li>
+        
+            <li><a class="toctree-l4" href="#divide-by-scalar">Divide by scalar</a></li>
+        
+            <li><a class="toctree-l4" href="#inverse">Inverse</a></li>
+        
+            <li><a class="toctree-l4" href="#cross-out">Cross out</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../statistic/">Statistic</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PHP-ML - 机器学习PHP库</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>数学 &raquo;</li>
+        
+      
+    
+    <li>Matrix</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="matrix">Matrix</h1>
+<p>Class that wraps PHP arrays to mathematical matrix.</p>
+<h3 id="creation">Creation</h3>
+<p>To create Matrix use simple arrays:</p>
+<pre><code>$matrix = new Matrix([
+    [3, 3, 3],
+    [4, 2, 1],
+    [5, 6, 7],
+]);
+</code></pre>
+
+<p>You can also create Matrix (one dimension) from flat array:</p>
+<pre><code>$flatArray = [1, 2, 3, 4];
+$matrix = Matrix::fromFlatArray($flatArray);
+</code></pre>
+
+<h3 id="matrix-data">Matrix data</h3>
+<p>Methods for reading data from Matrix:</p>
+<pre><code>$matrix-&gt;toArray(); // cast matrix to PHP array
+$matrix-&gt;getRows(); // rows count
+$matrix-&gt;getColumns(); // columns count
+$matrix-&gt;getColumnValues($column=4); // get values from given column
+</code></pre>
+
+<h3 id="determinant">Determinant</h3>
+<p>Read more about <a href="https://en.wikipedia.org/wiki/Determinant">matrix determinant</a>.</p>
+<pre><code>$matrix = new Matrix([
+    [3, 3, 3],
+    [4, 2, 1],
+    [5, 6, 7],
+]);
+
+$matrix-&gt;getDeterminant();
+// return -3
+</code></pre>
+
+<h3 id="transpose">Transpose</h3>
+<p>Read more about <a href="https://en.wikipedia.org/wiki/Transpose">matrix transpose</a>.</p>
+<pre><code>$matrix-&gt;transpose();
+// return new Matrix 
+</code></pre>
+
+<h3 id="multiply">Multiply</h3>
+<p>Multiply Matrix by another Matrix.</p>
+<pre><code>$matrix1 = new Matrix([
+    [1, 2, 3],
+    [4, 5, 6],
+]);
+
+$matrix2 = new Matrix([
+    [7, 8],
+    [9, 10],
+    [11, 12],
+]);
+
+$matrix1-&gt;multiply($matrix2);
+
+// result $product = [
+//  [58, 64],
+//  [139, 154],
+//];
+</code></pre>
+
+<h3 id="divide-by-scalar">Divide by scalar</h3>
+<p>You can divide Matrix by scalar value.</p>
+<pre><code>$matrix-&gt;divideByScalar(2);
+</code></pre>
+
+<h3 id="inverse">Inverse</h3>
+<p>Read more about <a href="https://en.wikipedia.org/wiki/Invertible_matrix">invertible matrix</a></p>
+<pre><code>$matrix = new Matrix([
+    [3, 4, 2],
+    [4, 5, 5],
+    [1, 1, 1],
+]);
+
+$matrix-&gt;inverse();
+
+// result $inverseMatrix = [
+//    [0, -1, 5],
+//    [1 / 2, 1 / 2, -7 / 2],
+//    [-1 / 2, 1 / 2, -1 / 2],
+//];
+
+</code></pre>
+
+<h3 id="cross-out">Cross out</h3>
+<p>Cross out given row and column from Matrix.</p>
+<pre><code>$matrix = new Matrix([
+    [3, 4, 2],
+    [4, 5, 5],
+    [1, 1, 1],
+]);
+
+$matrix-&gt;crossOut(1, 1)
+
+// result $crossOuted = [
+//    [3, 2],
+//    [1, 1],
+//];
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../set/" class="btn btn-neutral float-right" title="Set">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../distance/" class="btn btn-neutral" title="Distance"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../distance/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../set/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

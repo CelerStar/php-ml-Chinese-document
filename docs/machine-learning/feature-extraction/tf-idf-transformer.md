@@ -1,10 +1,10 @@
 # Tf-idf Transformer
 
-Tf–idf, short for term frequency–inverse document frequency, is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus.
+Tf–idf, 是术语频率逆文档频率的缩写，是一个数字统计，旨在反映词汇对集合或语料库中的文档的重要性。
 
 ### Constructor Parameters
 
-* $samples (array) - samples for fit tf-idf model
+* $samples (array) - 适合tf-idf模型的样本
 
 ```
 use Phpml\FeatureExtraction\TfIdfTransformer;
@@ -19,7 +19,7 @@ $transformer = new TfIdfTransformer($samples);
 
 ### Transformation
 
-To transform a collection of text samples use `transform` method. Example:
+要转换文本样本的集合使用 `transform`方法。例：
 
 ```
 use Phpml\FeatureExtraction\TfIdfTransformer;

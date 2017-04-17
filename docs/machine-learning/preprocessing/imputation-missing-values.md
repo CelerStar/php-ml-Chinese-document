@@ -1,13 +1,12 @@
 # Imputation missing values
 
-For various reasons, many real world datasets contain missing values, often encoded as blanks, NaNs or other placeholders.
-To solve this problem you can use the `Imputer` class.
+由于各种原因，许多现实世界的数据集包含缺少的值，通常编码为空白，NaN或其他占位符。要解决这个问题，你可以使用 `Imputer` 该类。
 
 ## Constructor Parameters
 
-* $missingValue (mixed) - this value will be replaced (default null)
-* $strategy (Strategy) - imputation strategy (read to use: MeanStrategy, MedianStrategy, MostFrequentStrategy)
-* $axis (int) - axis for strategy, Imputer::AXIS_COLUMN or Imputer::AXIS_ROW
+* $missingValue (mixed) -  此值将被替换 (default null)
+* $strategy (Strategy) -  插补策略 (read to use: MeanStrategy, MedianStrategy, MostFrequentStrategy)
+* $axis (int) - 用于策略的轴，Imputer::AXIS_COLUMN or Imputer::AXIS_ROW
 
 ```
 $imputer = new Imputer(null, new MeanStrategy(), Imputer::AXIS_COLUMN);
@@ -16,9 +15,9 @@ $imputer = new Imputer(null, new MedianStrategy(), Imputer::AXIS_ROW);
 
 ## Strategy
 
-* MeanStrategy - replace missing values using the mean along the axis
-* MedianStrategy - replace missing values using the median along the axis
-* MostFrequentStrategy - replace missing using the most frequent value along the axis
+* MeanStrategy - 使用沿轴的平均值替换缺失值
+* MedianStrategy - 使用沿轴的中位数替换缺失值
+* MostFrequentStrategy - 使用轴上最频繁的值替换丢失
 
 ## Example of use
 

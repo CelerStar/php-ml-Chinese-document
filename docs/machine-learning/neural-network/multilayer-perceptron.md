@@ -1,11 +1,11 @@
 # MultilayerPerceptron
 
-A multilayer perceptron (MLP) is a feedforward artificial neural network model that maps sets of input data onto a set of appropriate outputs.
+多层感知器（MLP）是前馈人工神经网络模型，其将输入数据集合映射到一组适当的输出。
 
 ## Constructor Parameters
 
-* $layers (array) - array with layers configuration, each value represent number of neurons in each layers
-* $activationFunction (ActivationFunction) - neuron activation function
+* $layers (array) -具有层配置的数组，每个值表示每层中的神经元数
+* $activationFunction (ActivationFunction) - 神经元激活功能
 
 ```
 use Phpml\NeuralNetwork\Network\MultilayerPerceptron;

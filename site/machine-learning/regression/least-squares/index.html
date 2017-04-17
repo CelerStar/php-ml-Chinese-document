@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>LeastSquares - PHP-ML - 机器学习PHP库</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "LeastSquares";
+    var mkdocs_page_input_path = "machine-learning\\regression\\least-squares.md";
+    var mkdocs_page_url = "/machine-learning/regression/least-squares/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> PHP-ML - 机器学习PHP库</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">首页</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">机器学习</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <span class="caption-text">关联性规则学习</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../association/apriori/">Apriori</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">分类</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../classification/svc/">SVC</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../classification/k-nearest-neighbors/">KNearestNeighbors</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../classification/naive-bayes/">NaiveBayes</a>
+                </li>
+    </ul>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">回归</span>
+    <ul class="subnav">
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">LeastSquares</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#leastsquares-linear-regression">LeastSquares Linear Regression</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l5" href="#train">Train</a></li>
+        
+            <li><a class="toctree-l5" href="#predict">Predict</a></li>
+        
+            <li><a class="toctree-l5" href="#multiple-linear-regression">Multiple Linear Regression</a></li>
+        
+            <li><a class="toctree-l5" href="#intercept-and-coefficients">Intercept and Coefficients</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../svr/">SVR</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">聚类</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../clustering/k-means/">KMeans</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../clustering/dbscan/">DBSCAN</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">指标</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../metric/accuracy/">Accuracy</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../metric/confusion-matrix/">Confusion Matrix</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../metric/classification-report/">Classification Report</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">工作流</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../workflow/pipeline/">Pipeline</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">神经网络</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../neural-network/multilayer-perceptron/">Multilayer Perceptron</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../neural-network/backpropagation/">Backpropagation training</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">交叉验证</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../cross-validation/random-split/">RandomSplit</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../cross-validation/stratified-random-split/">Stratified Random Split</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">预处理</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../preprocessing/normalization/">Normalization</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../preprocessing/imputation-missing-values/">Imputation missing values</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">特征提取</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../feature-extraction/token-count-vectorizer/">Token Count Vectorizer</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../feature-extraction/tf-idf-transformer/">Tf-idf Transformer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">数据集</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../datasets/array-dataset/">Array Dataset</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../datasets/csv-dataset/">CSV Dataset</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../datasets/files-dataset/">Files Dataset</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">Ready to use datasets</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../datasets/demo/iris/">Iris</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../datasets/demo/wine/">Wine</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../datasets/demo/glass/">Glass</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">模型管理</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../model-manager/persistency/">Persistency</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">数学</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../math/distance/">Distance</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../math/matrix/">Matrix</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../math/set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../math/statistic/">Statistic</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">PHP-ML - 机器学习PHP库</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>机器学习 &raquo;</li>
+        
+      
+        
+          <li>回归 &raquo;</li>
+        
+      
+    
+    <li>LeastSquares</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="leastsquares-linear-regression">LeastSquares Linear Regression</h1>
+<p>使用最小二乘法逼近解的线性模型。</p>
+<h3 id="train">Train</h3>
+<p>训练模型只需提供列车样本和目标值 (as <code>array</code>). 示例:</p>
+<pre><code>$samples = [[60], [61], [62], [63], [65]];
+$targets = [3.1, 3.6, 3.8, 4, 4.1];
+
+$regression = new LeastSquares();
+$regression-&gt;train($samples, $targets);
+</code></pre>
+
+<p>您可以使用多个数据集来训练模型，预测将基于所有的训练数据。</p>
+<h3 id="predict">Predict</h3>
+<p><code>predict</code> 用样本预测样本目标值使用方法，以检查 (as <code>array</code>). 示例:</p>
+<pre><code>$regression-&gt;predict([64]);
+// return 4.06
+</code></pre>
+
+<h3 id="multiple-linear-regression">Multiple Linear Regression</h3>
+<p>与线性回归相关的术语多数表示有两个或更多个样本参数用于预测目标。例如，您可以使用：里程和生产年份来预测汽车的价格。</p>
+<pre><code>$samples = [[73676, 1996], [77006, 1998], [10565, 2000], [146088, 1995], [15000, 2001], [65940, 2000], [9300, 2000], [93739, 1996], [153260, 1994], [17764, 2002], [57000, 1998], [15000, 2000]];
+$targets = [2000, 2750, 15500, 960, 4400, 8800, 7100, 2550, 1025, 5900, 4600, 4400];
+
+$regression = new LeastSquares();
+$regression-&gt;train($samples, $targets);
+$regression-&gt;predict([60000, 1996])
+// return 4094.82
+</code></pre>
+
+<h3 id="intercept-and-coefficients">Intercept and Coefficients</h3>
+<p>训练你的模型后，你可以得到截距和系数数组。</p>
+<pre><code>$regression-&gt;getIntercept();
+// return -7.9635135135131
+
+$regression-&gt;getCoefficients();
+// return [array(1) {[0]=&gt;float(0.18783783783783)}]
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../svr/" class="btn btn-neutral float-right" title="SVR">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../classification/naive-bayes/" class="btn btn-neutral" title="NaiveBayes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../classification/naive-bayes/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../svr/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

@@ -1,18 +1,18 @@
 # Pipeline
 
-In machine learning, it is common to run a sequence of algorithms to process and learn from dataset. For example:
+在机器学习中，通常运行一系列算法来处理和学习数据集。例如：
 
     * Split each document’s text into tokens.
     * Convert each document’s words into a numerical feature vector ([Token Count Vectorizer](machine-learning/feature-extraction/token-count-vectorizer/)).
     * Learn a prediction model using the feature vectors and labels.
     
-PHP-ML represents such a workflow as a Pipeline, which consists sequence of transformers and a estimator.
+PHP-ML表示作为流水线的工作流程，其中包含变压器序列和估计器。
 
 
 ### Constructor Parameters
 
-* $transformers (array|Transformer[]) - sequence of objects that implements Transformer interface
-* $estimator (Estimator) - estimator that can train and predict
+* $transformers (array|Transformer[]) - 实现Transformer接口的对象序列
+* $estimator (Estimator) - 可以训练和预测的估计
 
 ```
 use Phpml\Classification\SVC;
@@ -29,7 +29,7 @@ $pipeline = new Pipeline($transformers, $estimator);
 
 ### Example
 
-First our pipeline replace missing value, then normalize samples and finally train SVC estimator. Thus prepared pipeline repeats each transformation step for predicted sample.
+首先我们的管道代替缺失值，然后对样本进行归一化，最后训练SVC估计。如此制备的管道重复每个转化步骤用于预测样品。
 
 ```
 use Phpml\Classification\SVC;

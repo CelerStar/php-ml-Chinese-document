@@ -1,10 +1,10 @@
 # FilesDataset
 
-Helper class that loads dataset from files. Use folder names as targets. It extends the `ArrayDataset`.
+从文件加载数据集的助手类。使用文件夹名称作为目标。它扩展了 `ArrayDataset`.
 
 ### Constructors Parameters
 
-* $rootPath - (string) path to root folder that contains files dataset
+* $rootPath - (string)包含文件数据集的根文件夹的路径
 
 ```
 use Phpml\Dataset\FilesDataset;
@@ -12,11 +12,11 @@ use Phpml\Dataset\FilesDataset;
 $dataset = new FilesDataset('path/to/data');
 ```
 
-See [ArrayDataset](array-dataset.md) for more information.
+查看 [ArrayDataset](array-dataset.md)以获取更多信息。
 
 ### Example
 
-Files structure:
+文件结构：
 
 ```
 data
@@ -42,7 +42,7 @@ data
         ...
 ```
 
-Load files data with `FilesDataset`: 
+加载文件数据 `FilesDataset`: 
 
 ```
 use Phpml\Dataset\FilesDataset;

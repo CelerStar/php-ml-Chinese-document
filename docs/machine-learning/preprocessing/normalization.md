@@ -1,6 +1,6 @@
 # Normalization
 
-Normalization is the process of scaling individual samples to have unit norm.
+标准化是将单个样本缩放为单位规范的过程。
 
 ## L2 norm
 

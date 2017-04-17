@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>KMeans - PHP-ML - 机器学习PHP库</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "KMeans";
+    var mkdocs_page_input_path = "machine-learning\\clustering\\k-means.md";
+    var mkdocs_page_url = "/machine-learning/clustering/k-means/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> PHP-ML - 机器学习PHP库</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">首页</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">机器学习</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <span class="caption-text">关联性规则学习</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../association/apriori/">Apriori</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">分类</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../classification/svc/">SVC</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../classification/k-nearest-neighbors/">KNearestNeighbors</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../classification/naive-bayes/">NaiveBayes</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">回归</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../regression/least-squares/">LeastSquares</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../regression/svr/">SVR</a>
+                </li>
+    </ul>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">聚类</span>
+    <ul class="subnav">
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">KMeans</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#k-means-clustering">K-means clustering</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l5" href="#constructor-parameters">Constructor Parameters</a></li>
+        
+            <li><a class="toctree-l5" href="#clustering">Clustering</a></li>
+        
+            <li><a class="toctree-l5" href="#initialization-methods">Initialization methods</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../dbscan/">DBSCAN</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">指标</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../metric/accuracy/">Accuracy</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../metric/confusion-matrix/">Confusion Matrix</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../metric/classification-report/">Classification Report</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">工作流</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../workflow/pipeline/">Pipeline</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">神经网络</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../neural-network/multilayer-perceptron/">Multilayer Perceptron</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../neural-network/backpropagation/">Backpropagation training</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">交叉验证</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../cross-validation/random-split/">RandomSplit</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../cross-validation/stratified-random-split/">Stratified Random Split</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">预处理</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../preprocessing/normalization/">Normalization</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../preprocessing/imputation-missing-values/">Imputation missing values</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">特征提取</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../feature-extraction/token-count-vectorizer/">Token Count Vectorizer</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../feature-extraction/tf-idf-transformer/">Tf-idf Transformer</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">数据集</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../datasets/array-dataset/">Array Dataset</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../datasets/csv-dataset/">CSV Dataset</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../datasets/files-dataset/">Files Dataset</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">Ready to use datasets</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../datasets/demo/iris/">Iris</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../datasets/demo/wine/">Wine</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../datasets/demo/glass/">Glass</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">模型管理</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../model-manager/persistency/">Persistency</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">数学</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../math/distance/">Distance</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../math/matrix/">Matrix</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../math/set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../math/statistic/">Statistic</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">PHP-ML - 机器学习PHP库</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>机器学习 &raquo;</li>
+        
+      
+        
+          <li>聚类 &raquo;</li>
+        
+      
+    
+    <li>KMeans</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="k-means-clustering">K-means clustering</h1>
+<p>K-Means算法通过尝试分离n个相等方差组的样本来聚集数据，从而将称为惯性或簇内和平方的标准最小化。该算法需要指定簇的数量。</p>
+<h3 id="constructor-parameters">Constructor Parameters</h3>
+<ul>
+<li>$clustersNumber - 要查找的群集数</li>
+<li>$initialization - 初始化方法，默认kmeans ++（见下文）</li>
+</ul>
+<pre><code>$kmeans = new KMeans(2);
+$kmeans = new KMeans(4, KMeans::INIT_RANDOM);
+</code></pre>
+
+<h3 id="clustering">Clustering</h3>
+<p>要将样本分成簇，只需使用 <code>cluster</code> 方法即可。它返回 <code>array</code> 带有样本的集群。</p>
+<pre><code>$samples = [[1, 1], [8, 7], [1, 2], [7, 8], [2, 1], [8, 9]];
+
+$kmeans = new KMeans(2);
+$kmeans-&gt;cluster($samples);
+// return [0=&gt;[[1, 1], ...], 1=&gt;[[8, 7], ...]] 
+</code></pre>
+
+<h3 id="initialization-methods">Initialization methods</h3>
+<h4 id="kmeans-default">kmeans++ (default)</h4>
+<p>K-means ++方法以智能方式选择k-均值聚类的初始聚类中心，以加速收敛。它使用DASV播种方法包括为群集找到良好的初始质心。</p>
+<h4 id="random">random</h4>
+<p>随机初始化方法选择完全随机的中心。它获得空间边界，以避免将集群中心与样本数据相距太远。</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../dbscan/" class="btn btn-neutral float-right" title="DBSCAN">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../regression/svr/" class="btn btn-neutral" title="SVR"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../regression/svr/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../dbscan/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

@@ -1,11 +1,11 @@
 # Backpropagation
 
-Backpropagation, an abbreviation for "backward propagation of errors", is a common method of training artificial neural networks used in conjunction with an optimization method such as gradient descent. 
+Backpropagation "backward propagation of errors"的缩写，是训练人造神经网络的常用方法，与诸如梯度下降的优化方法结合使用。
 
 ## Constructor Parameters
 
-* $network (Network) - network to train (for example MultilayerPerceptron instance)
-* $theta (int) - network theta parameter
+* $network (Network) - 网络训练 (for example MultilayerPerceptron instance)
+* $theta (int) - 网络theta参数
 
 ```
 use Phpml\NeuralNetwork\Network\MultilayerPerceptron;
@@ -17,7 +17,7 @@ $training = new Backpropagation($network);
 
 ## Training
 
-Example of XOR training:
+异常训练示例：
 
 ```
 $training->train(
@@ -27,4 +27,4 @@ $training->train(
     $maxIteraions = 30000
 );
 ```
-You can train the neural network using multiple data sets, predictions will be based on all the training data.
+您可以使用多个数据集训练神经网络，预测将基于所有训练数据。

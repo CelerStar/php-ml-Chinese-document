@@ -1,7 +1,6 @@
 # Persistency
 
-You can save trained models for future use. Persistency across requests achieved by saving and restoring serialized estimators into files.
-
+您可以保存经过培训的模型以备将来使用 通过将序列化估计器保存并恢复为文件而实现的请求的持续性。
 ### Example
 
 ```

@@ -1,12 +1,12 @@
 # CsvDataset
 
-Helper class that loads data from CSV file. It extends the `ArrayDataset`.
+从CSV文件加载数据的助手类。它扩展了 `ArrayDataset`.
 
 ### Constructors Parameters
 
-* $filepath - (string) path to `.csv` file
-* $features - (int) number of columns that are features (starts from first column), last column must be a label
-* $headingRow - (bool) define is file have a heading row (if `true` then first row will be ignored)
+* $filepath - (string) 文件路径
+* $features - (int) 特征列数（从第一列开始），最后一列必须是一个标签
+* $headingRow - (bool) define是文件有一个标题行（如果true第一行将被忽略）
 
 ```
 $dataset = new CsvDataset('dataset.csv', 2, true);

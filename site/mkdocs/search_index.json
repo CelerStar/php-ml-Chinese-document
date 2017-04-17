@@ -1,0 +1,884 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "PHP-ML\u2014\u2014\u673a\u5668\u5b66\u4e60PHP\u5e93\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u672c\u6587\u6863\u7531 \u8d5b\u7075\u5f00\u6e90\u6280\u672f\u7814\u53d1\u793e\u533a \u7ef4\u62a4\n\n\n\u6c49\u5316\u6587\u6863\u9879\u76ee\u5730\u5740\n\n\nPHP-ML QQ\u4ea4\u6d41\u7fa4 596635852\n\n\n\n\n\n\n\u4f7f\u7528PHP\u8bed\u8a00\u6784\u5efa\u7684\u65b0\u7684\u673a\u5668\u5b66\u4e60\u65b9\u6cd5\u3002\u5305\u62ec\u76f8\u5173\u7b97\u6cd5,\u4ea4\u53c9\u9a8c\u8bc1\u3001\u9884\u5904\u7406\u3001\u7279\u5f81\u63d0\u53d6\u548c\u66f4\u591a\u7684\u673a\u5668\u5b66\u4e60\u7684\u51fd\u6570\u5e93\u3002\n\n\nPHP-ML \u9700\u8981 PHP \n= 7.0.\n\n\n\u7b80\u5355\u7684\u4f8b\u5b50\u5206\u7c7b:\n\n\nuse Phpml\\Classification\\KNearestNeighbors;\n\n$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n$classifier = new KNearestNeighbors();\n$classifier-\ntrain($samples, $labels);\n\n$classifier-\npredict([3, 2]); \n// return 'b'\n\n\n\n\n\u6587\u6863\n\n\n\u5982\u4f55\u4f7f\u7528 PHP-ML \u8bf7\u9605\u8bfb\u4ee5\u4e0b \n\u6587\u6863\n.\n\n\n\u5b89\u88c5\n\n\n\u76ee\u524d\u8fd9\u4e2a\u5e93\u662f\u5728\u53d1\u5c55\u7684\u8fc7\u7a0b\u4e2d,\u4f46\u4f60\u53ef\u4ee5\u81ea\u884c\u5b89\u88c5\u5b83\n\n\ncomposer require php-ai/php-ml\n\n\n\n\n\u793a\u4f8b\n\n\n\u793a\u4f8b\u811a\u672c\u653e\u5728\u4e00\u4e2a\u5355\u72ec\u7684\u5b58\u50a8\u5e93 \nphp-ai/php-ml-examples\n.\n\n\n\u7279\u5f81\n\n\n\n\n\u5173\u8054\u6027\u89c4\u5219\u5b66\u4e60\n\n\nApriori\n\n\n\n\n\n\n\u5206\u7c7b\n\n\nSVC\n\n\nk-Nearest Neighbors\n\n\nNaive Bayes\n\n\n\n\n\n\n\u56de\u5f52\n\n\nLeast Squares\n\n\nSVR\n\n\n\n\n\n\n\u805a\u7c7b\n\n\nk-Means\n\n\nDBSCAN\n\n\n\n\n\n\n\u6307\u6807\n\n\nAccuracy\n\n\nConfusion Matrix\n\n\nClassification Report\n\n\n\n\n\n\n\u5de5\u4f5c\u6d41\n\n\nPipeline\n\n\n\n\n\n\n\u795e\u7ecf\u7f51\u7edc\n\n\nMultilayer Perceptron\n\n\nBackpropagation training\n\n\n\n\n\n\n\u4ea4\u53c9\u9a8c\u8bc1\n\n\nRandom Split\n\n\nStratified Random Split\n\n\n\n\n\n\n\u9884\u5904\u7406\n\n\nNormalization\n\n\nImputation missing values\n\n\n\n\n\n\n\u7279\u5f81\u63d0\u53d6\n\n\nToken Count Vectorizer\n\n\nTf-idf Transformer\n\n\n\n\n\n\n\u6570\u636e\u96c6\n\n\nArray\n\n\nCSV\n\n\nFiles\n\n\nReady to use:\n\n\nIris\n\n\nWine\n\n\nGlass\n\n\n\n\n\n\n\n\n\n\n\u6a21\u578b\u7ba1\u7406\n\n\nPersistency\n\n\n\n\n\n\n\u6570\u5b66\n\n\nDistance\n\n\nMatrix\n\n\nSet\n\n\nStatistic\n\n\n\n\n\n\n\n\n\u8d21\u732e\n\n\n\n\n\u95ee\u9898\u8ffd\u8e2a: github.com/php-ai/php-ml/issues\n\n\n\u6e90\u4ee3\u7801: github.com/php-ai/php-ml\n\n\n\n\n\u4f60\u53ef\u4ee5\u627e\u5230\u66f4\u591a\u5173\u4e8e\u8d21\u732e \nCONTRIBUTING.md\n.\n\n\n\u8bb8\u53ef\u8bc1\n\n\nPHP-ML MIT\u8bb8\u53ef\u4e0b\u53d1\u5e03\u3002 \u6709\u5173\u8be6\u7ec6\u4fe1\u606f,\u8bf7\u53c2\u9605\u6346\u7ed1\u8bb8\u53ef\u8bc1\u6587\u4ef6\u3002\n\n\n\u4f5c\u8005\n\n\nArkadiusz Kondas (@ArkadiuszKondas)", 
+            "title": "\u9996\u9875"
+        }, 
+        {
+            "location": "/#php-mlphp", 
+            "text": "", 
+            "title": "PHP-ML\u2014\u2014\u673a\u5668\u5b66\u4e60PHP\u5e93"
+        }, 
+        {
+            "location": "/#_1", 
+            "text": "", 
+            "title": "\u672c\u6587\u6863\u7531 \u8d5b\u7075\u5f00\u6e90\u6280\u672f\u7814\u53d1\u793e\u533a \u7ef4\u62a4"
+        }, 
+        {
+            "location": "/#_2", 
+            "text": "", 
+            "title": "\u6c49\u5316\u6587\u6863\u9879\u76ee\u5730\u5740"
+        }, 
+        {
+            "location": "/#php-ml-qq-596635852", 
+            "text": "\u4f7f\u7528PHP\u8bed\u8a00\u6784\u5efa\u7684\u65b0\u7684\u673a\u5668\u5b66\u4e60\u65b9\u6cd5\u3002\u5305\u62ec\u76f8\u5173\u7b97\u6cd5,\u4ea4\u53c9\u9a8c\u8bc1\u3001\u9884\u5904\u7406\u3001\u7279\u5f81\u63d0\u53d6\u548c\u66f4\u591a\u7684\u673a\u5668\u5b66\u4e60\u7684\u51fd\u6570\u5e93\u3002  PHP-ML \u9700\u8981 PHP  = 7.0.  \u7b80\u5355\u7684\u4f8b\u5b50\u5206\u7c7b:  use Phpml\\Classification\\KNearestNeighbors;\n\n$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n$classifier = new KNearestNeighbors();\n$classifier- train($samples, $labels);\n\n$classifier- predict([3, 2]); \n// return 'b'", 
+            "title": "PHP-ML QQ\u4ea4\u6d41\u7fa4 596635852"
+        }, 
+        {
+            "location": "/#_3", 
+            "text": "\u5982\u4f55\u4f7f\u7528 PHP-ML \u8bf7\u9605\u8bfb\u4ee5\u4e0b  \u6587\u6863 .", 
+            "title": "\u6587\u6863"
+        }, 
+        {
+            "location": "/#_4", 
+            "text": "\u76ee\u524d\u8fd9\u4e2a\u5e93\u662f\u5728\u53d1\u5c55\u7684\u8fc7\u7a0b\u4e2d,\u4f46\u4f60\u53ef\u4ee5\u81ea\u884c\u5b89\u88c5\u5b83  composer require php-ai/php-ml", 
+            "title": "\u5b89\u88c5"
+        }, 
+        {
+            "location": "/#_5", 
+            "text": "\u793a\u4f8b\u811a\u672c\u653e\u5728\u4e00\u4e2a\u5355\u72ec\u7684\u5b58\u50a8\u5e93  php-ai/php-ml-examples .", 
+            "title": "\u793a\u4f8b"
+        }, 
+        {
+            "location": "/#_6", 
+            "text": "\u5173\u8054\u6027\u89c4\u5219\u5b66\u4e60  Apriori    \u5206\u7c7b  SVC  k-Nearest Neighbors  Naive Bayes    \u56de\u5f52  Least Squares  SVR    \u805a\u7c7b  k-Means  DBSCAN    \u6307\u6807  Accuracy  Confusion Matrix  Classification Report    \u5de5\u4f5c\u6d41  Pipeline    \u795e\u7ecf\u7f51\u7edc  Multilayer Perceptron  Backpropagation training    \u4ea4\u53c9\u9a8c\u8bc1  Random Split  Stratified Random Split    \u9884\u5904\u7406  Normalization  Imputation missing values    \u7279\u5f81\u63d0\u53d6  Token Count Vectorizer  Tf-idf Transformer    \u6570\u636e\u96c6  Array  CSV  Files  Ready to use:  Iris  Wine  Glass      \u6a21\u578b\u7ba1\u7406  Persistency    \u6570\u5b66  Distance  Matrix  Set  Statistic", 
+            "title": "\u7279\u5f81"
+        }, 
+        {
+            "location": "/#_7", 
+            "text": "\u95ee\u9898\u8ffd\u8e2a: github.com/php-ai/php-ml/issues  \u6e90\u4ee3\u7801: github.com/php-ai/php-ml   \u4f60\u53ef\u4ee5\u627e\u5230\u66f4\u591a\u5173\u4e8e\u8d21\u732e  CONTRIBUTING.md .", 
+            "title": "\u8d21\u732e"
+        }, 
+        {
+            "location": "/#_8", 
+            "text": "PHP-ML MIT\u8bb8\u53ef\u4e0b\u53d1\u5e03\u3002 \u6709\u5173\u8be6\u7ec6\u4fe1\u606f,\u8bf7\u53c2\u9605\u6346\u7ed1\u8bb8\u53ef\u8bc1\u6587\u4ef6\u3002", 
+            "title": "\u8bb8\u53ef\u8bc1"
+        }, 
+        {
+            "location": "/#_9", 
+            "text": "Arkadiusz Kondas (@ArkadiuszKondas)", 
+            "title": "\u4f5c\u8005"
+        }, 
+        {
+            "location": "/machine-learning/association/apriori/", 
+            "text": "Apriori Associator\n\n\n\u5b66\u4e60\u57fa\u4e8e\u5173\u8054\u89c4\u5219 \nApriori algorithm\n \u7684\u9891\u7e41\u9879\u96c6\u6316\u6398\u3002\n\n\nConstructor Parameters\n\n\n\n\n$support - \nconfidence\n, \u6700\u5c0f\u76f8\u5bf9\u9891\u7e41\u9879\u76ee\u96c6\u7684\u8bad\u7ec3\u6837\u672c\n\n\n$confidence - \nconfidence\n, \u6700\u5c0f\u76f8\u5bf9\u6570\u91cf\u7684\u9879\u76ee\u96c6\u9891\u7e41\u9879\u96c6\n\n\n\n\nuse Phpml\\Association\\Apriori;\n\n$associator = new Apriori($support = 0.5, $confidence = 0.5);\n\n\n\n\nTrain\n\n\n\u8bad\u7ec3\u53ea\u9700\u63d0\u4f9b\u8bad\u7ec3\u6837\u672c\u548c\u6807\u7b7e (as \narray\n). \u793a\u4f8b:\n\n\n$samples = [['alpha', 'beta', 'epsilon'], ['alpha', 'beta', 'theta'], ['alpha', 'beta', 'epsilon'], ['alpha', 'beta', 'theta']];\n$labels  = [];\n\nuse Phpml\\Association\\Apriori;\n\n$associator = new Apriori($support = 0.5, $confidence = 0.5);\n$associator-\ntrain($samples, $labels);\n\n\n\n\n\u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6,\u8bad\u7ec3\u4f19\u4f34\u5c06\u57fa\u4e8e\u9884\u6d4b\u6570\u636e\u7684\u6240\u6709\u8bad\u7ec3\u3002\n\n\nPredict\n\n\n\u9884\u6d4b\u6837\u672c\u6807\u7b7e\u4f7f\u7528 \npredict\n \u65b9\u6cd5\u3002 \u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u672c\u6570\u7ec4:\n\n\n$associator-\npredict(['alpha','theta']);\n// return [[['beta']]]\n\n$associator-\npredict([['alpha','epsilon'],['beta','theta']]);\n// return [[['beta']], [['alpha']]]\n\n\n\n\nAssociating\n\n\n\u751f\u6210\u5173\u8054\u89c4\u5219\u7b80\u5355\u5730\u4f7f\u7528 \nrules\n \u65b9\u6cd5\u3002\n\n\n$associator-\ngetRules();\n// return [['antecedent' =\n ['alpha', 'theta'], 'consequent' =\n ['beta], 'support' =\n 1.0, 'confidence' =\n 1.0], ... ]\n\n\n\n\nFrequent item sets\n\n\n\u751f\u6210k-length\u9891\u7e41\u9879\u96c6\u7b80\u5355\u5730\u4f7f\u7528 \napriori\n \u65b9\u6cd5\u3002\n\n\n$associator-\napriori();\n// return [ 1 =\n [['alpha'], ['beta'], ['theta'], ['epsilon']], 2 =\n [...], ...]", 
+            "title": "Apriori"
+        }, 
+        {
+            "location": "/machine-learning/association/apriori/#apriori-associator", 
+            "text": "\u5b66\u4e60\u57fa\u4e8e\u5173\u8054\u89c4\u5219  Apriori algorithm  \u7684\u9891\u7e41\u9879\u96c6\u6316\u6398\u3002", 
+            "title": "Apriori Associator"
+        }, 
+        {
+            "location": "/machine-learning/association/apriori/#constructor-parameters", 
+            "text": "$support -  confidence , \u6700\u5c0f\u76f8\u5bf9\u9891\u7e41\u9879\u76ee\u96c6\u7684\u8bad\u7ec3\u6837\u672c  $confidence -  confidence , \u6700\u5c0f\u76f8\u5bf9\u6570\u91cf\u7684\u9879\u76ee\u96c6\u9891\u7e41\u9879\u96c6   use Phpml\\Association\\Apriori;\n\n$associator = new Apriori($support = 0.5, $confidence = 0.5);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/association/apriori/#train", 
+            "text": "\u8bad\u7ec3\u53ea\u9700\u63d0\u4f9b\u8bad\u7ec3\u6837\u672c\u548c\u6807\u7b7e (as  array ). \u793a\u4f8b:  $samples = [['alpha', 'beta', 'epsilon'], ['alpha', 'beta', 'theta'], ['alpha', 'beta', 'epsilon'], ['alpha', 'beta', 'theta']];\n$labels  = [];\n\nuse Phpml\\Association\\Apriori;\n\n$associator = new Apriori($support = 0.5, $confidence = 0.5);\n$associator- train($samples, $labels);  \u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6,\u8bad\u7ec3\u4f19\u4f34\u5c06\u57fa\u4e8e\u9884\u6d4b\u6570\u636e\u7684\u6240\u6709\u8bad\u7ec3\u3002", 
+            "title": "Train"
+        }, 
+        {
+            "location": "/machine-learning/association/apriori/#predict", 
+            "text": "\u9884\u6d4b\u6837\u672c\u6807\u7b7e\u4f7f\u7528  predict  \u65b9\u6cd5\u3002 \u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u672c\u6570\u7ec4:  $associator- predict(['alpha','theta']);\n// return [[['beta']]]\n\n$associator- predict([['alpha','epsilon'],['beta','theta']]);\n// return [[['beta']], [['alpha']]]", 
+            "title": "Predict"
+        }, 
+        {
+            "location": "/machine-learning/association/apriori/#associating", 
+            "text": "\u751f\u6210\u5173\u8054\u89c4\u5219\u7b80\u5355\u5730\u4f7f\u7528  rules  \u65b9\u6cd5\u3002  $associator- getRules();\n// return [['antecedent' =  ['alpha', 'theta'], 'consequent' =  ['beta], 'support' =  1.0, 'confidence' =  1.0], ... ]", 
+            "title": "Associating"
+        }, 
+        {
+            "location": "/machine-learning/association/apriori/#frequent-item-sets", 
+            "text": "\u751f\u6210k-length\u9891\u7e41\u9879\u96c6\u7b80\u5355\u5730\u4f7f\u7528  apriori  \u65b9\u6cd5\u3002  $associator- apriori();\n// return [ 1 =  [['alpha'], ['beta'], ['theta'], ['epsilon']], 2 =  [...], ...]", 
+            "title": "Frequent item sets"
+        }, 
+        {
+            "location": "/machine-learning/classification/svc/", 
+            "text": "Support Vector Classification\n\n\n\u57fa\u4e8elibsvm\u5b9e\u73b0\u652f\u6301\u5411\u91cf\u673a\u5206\u7c7b\u5668\u3002\n\n\nConstructor Parameters\n\n\n\n\n$kernel (int) - \u5185\u6838\u7c7b\u578b\u4f7f\u7528\u7684\u7b97\u6cd5 (\u9ed8\u8ba4 Kernel::LINEAR)\n\n\n$cost (float) - \u53c2\u6570 C of C-SVC (\u9ed8\u8ba4 1.0)\n\n\n$degree (int) - Kernel::POLYNOMIAL function \u7b49\u7ea7(\u9ed8\u8ba4 3)\n\n\n$gamma (float) - kernel coefficient for \u2018Kernel::RBF\u2019, \u2018Kernel::POLYNOMIAL\u2019 and \u2018Kernel::SIGMOID\u2019. \u5982\u679c gamma \u662f \u2018null\u2019 \u5219 1/features \u5c06\u88ab\u4f7f\u7528.\n\n\n$coef0 (float) - \u72ec\u7acb term in kernel function. \u5b83\u4ec5\u5728 \u2018Kernel::POLYNOMIAL\u2019 and \u2018Kernel::SIGMOID\u2019 \u6709\u6548(\u9ed8\u8ba4 0.0)\n\n\n$tolerance (float) - \u6807\u51c6\u516c\u5dee (\u9ed8\u8ba4 0.001)\n\n\n$cacheSize (int) - \u7f13\u5b58\u5185\u5b58\u5927\u5c0f MB (\u9ed8\u8ba4 100)\n\n\n$shrinking (bool) - \u662f\u5426\u4f7f\u7528\u542f\u53d1\u5f0f (\u9ed8\u8ba4 true)\n\n\n$probabilityEstimates (bool) - \u662f\u5426\u542f\u7528\u6982\u7387\u4f30\u8ba1 (\u9ed8\u8ba4 false)\n\n\n\n\n$classifier = new SVC(Kernel::LINEAR, $cost = 1000);\n$classifier = new SVC(Kernel::RBF, $cost = 1000, $degree = 3, $gamma = 6);\n\n\n\n\nTrain\n\n\n\u8bad\u7ec3\u4e00\u4e2a\u5206\u7c7b\u5668\u53ea\u63d0\u4f9b\u8bad\u7ec3\u6837\u672c\u548c\u6807\u7b7e (as \narray\n). \u793a\u4f8b:\n\n\nuse Phpml\\Classification\\SVC;\nuse Phpml\\SupportVectorMachine\\Kernel;\n\n$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n$classifier = new SVC(Kernel::LINEAR, $cost = 1000);\n$classifier-\ntrain($samples, $labels);\n\n\n\n\n\u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6,\u8bad\u7ec3\u5206\u7c7b\u5668\u7684\u9884\u6d4b\u5c06\u57fa\u4e8e\u6570\u636e\u7684\u6240\u6709\u8bad\u7ec3\u3002\n\n\nPredict\n\n\n\u9884\u6d4b\u6837\u672c\u6807\u7b7e\u4f7f\u7528 \npredict\n \u65b9\u6cd5\u3002 \u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u672c\u6570\u7ec4:\n\n\n$classifier-\npredict([3, 2]);\n// return 'b'\n\n$classifier-\npredict([[3, 2], [1, 5]]);\n// return ['b', 'a']", 
+            "title": "SVC"
+        }, 
+        {
+            "location": "/machine-learning/classification/svc/#support-vector-classification", 
+            "text": "\u57fa\u4e8elibsvm\u5b9e\u73b0\u652f\u6301\u5411\u91cf\u673a\u5206\u7c7b\u5668\u3002", 
+            "title": "Support Vector Classification"
+        }, 
+        {
+            "location": "/machine-learning/classification/svc/#constructor-parameters", 
+            "text": "$kernel (int) - \u5185\u6838\u7c7b\u578b\u4f7f\u7528\u7684\u7b97\u6cd5 (\u9ed8\u8ba4 Kernel::LINEAR)  $cost (float) - \u53c2\u6570 C of C-SVC (\u9ed8\u8ba4 1.0)  $degree (int) - Kernel::POLYNOMIAL function \u7b49\u7ea7(\u9ed8\u8ba4 3)  $gamma (float) - kernel coefficient for \u2018Kernel::RBF\u2019, \u2018Kernel::POLYNOMIAL\u2019 and \u2018Kernel::SIGMOID\u2019. \u5982\u679c gamma \u662f \u2018null\u2019 \u5219 1/features \u5c06\u88ab\u4f7f\u7528.  $coef0 (float) - \u72ec\u7acb term in kernel function. \u5b83\u4ec5\u5728 \u2018Kernel::POLYNOMIAL\u2019 and \u2018Kernel::SIGMOID\u2019 \u6709\u6548(\u9ed8\u8ba4 0.0)  $tolerance (float) - \u6807\u51c6\u516c\u5dee (\u9ed8\u8ba4 0.001)  $cacheSize (int) - \u7f13\u5b58\u5185\u5b58\u5927\u5c0f MB (\u9ed8\u8ba4 100)  $shrinking (bool) - \u662f\u5426\u4f7f\u7528\u542f\u53d1\u5f0f (\u9ed8\u8ba4 true)  $probabilityEstimates (bool) - \u662f\u5426\u542f\u7528\u6982\u7387\u4f30\u8ba1 (\u9ed8\u8ba4 false)   $classifier = new SVC(Kernel::LINEAR, $cost = 1000);\n$classifier = new SVC(Kernel::RBF, $cost = 1000, $degree = 3, $gamma = 6);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/classification/svc/#train", 
+            "text": "\u8bad\u7ec3\u4e00\u4e2a\u5206\u7c7b\u5668\u53ea\u63d0\u4f9b\u8bad\u7ec3\u6837\u672c\u548c\u6807\u7b7e (as  array ). \u793a\u4f8b:  use Phpml\\Classification\\SVC;\nuse Phpml\\SupportVectorMachine\\Kernel;\n\n$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n$classifier = new SVC(Kernel::LINEAR, $cost = 1000);\n$classifier- train($samples, $labels);  \u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6,\u8bad\u7ec3\u5206\u7c7b\u5668\u7684\u9884\u6d4b\u5c06\u57fa\u4e8e\u6570\u636e\u7684\u6240\u6709\u8bad\u7ec3\u3002", 
+            "title": "Train"
+        }, 
+        {
+            "location": "/machine-learning/classification/svc/#predict", 
+            "text": "\u9884\u6d4b\u6837\u672c\u6807\u7b7e\u4f7f\u7528  predict  \u65b9\u6cd5\u3002 \u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u672c\u6570\u7ec4:  $classifier- predict([3, 2]);\n// return 'b'\n\n$classifier- predict([[3, 2], [1, 5]]);\n// return ['b', 'a']", 
+            "title": "Predict"
+        }, 
+        {
+            "location": "/machine-learning/classification/k-nearest-neighbors/", 
+            "text": "KNearestNeighbors Classifier\n\n\n\u5206\u7c7b\u5668\u5b9e\u73b0\u518d\u90bb\u5c45\u7b97\u6cd5\u3002\n\n\nConstructor Parameters\n\n\n\n\n$k - \u6700\u8fd1\u7684\u4e34\u8fd1\u626b\u63cf\u6570\u91cfn (\u9ed8\u8ba4: 3)\n\n\n$distanceMetric - \u8ddd\u79bb\u5bf9\u8c61, \u9ed8\u8ba4\u6b27\u51e0\u91cc\u5f97 (\u67e5\u9605 \ndistance documentation\n)\n\n\n\n\n$classifier = new KNearestNeighbors($k=4);\n$classifier = new KNearestNeighbors($k=3, new Minkowski($lambda=4));\n\n\n\n\nTrain\n\n\n\u8bad\u7ec3\u4e00\u4e2a\u5206\u7c7b\u5668\u53ea\u63d0\u4f9b\u8bad\u7ec3\u6837\u672c\u548c\u6807\u7b7e (as \narray\n). \u793a\u4f8b:\n\n\n$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n$classifier = new KNearestNeighbors();\n$classifier-\ntrain($samples, $labels);\n\n\n\n\n\u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6,\u8bad\u7ec3\u5206\u7c7b\u5668\u7684\u9884\u6d4b\u5c06\u57fa\u4e8e\u6570\u636e\u7684\u6240\u6709\u8bad\u7ec3\u3002\n\n\nPredict\n\n\n\u9884\u6d4b\u6837\u672c\u6807\u7b7e\u4f7f\u7528 \npredict\n \u65b9\u6cd5\u3002 \u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u672c\u6570\u7ec4:\n\n\n$classifier-\npredict([3, 2]);\n// return 'b'\n\n$classifier-\npredict([[3, 2], [1, 5]]);\n// return ['b', 'a']", 
+            "title": "KNearestNeighbors"
+        }, 
+        {
+            "location": "/machine-learning/classification/k-nearest-neighbors/#knearestneighbors-classifier", 
+            "text": "\u5206\u7c7b\u5668\u5b9e\u73b0\u518d\u90bb\u5c45\u7b97\u6cd5\u3002", 
+            "title": "KNearestNeighbors Classifier"
+        }, 
+        {
+            "location": "/machine-learning/classification/k-nearest-neighbors/#constructor-parameters", 
+            "text": "$k - \u6700\u8fd1\u7684\u4e34\u8fd1\u626b\u63cf\u6570\u91cfn (\u9ed8\u8ba4: 3)  $distanceMetric - \u8ddd\u79bb\u5bf9\u8c61, \u9ed8\u8ba4\u6b27\u51e0\u91cc\u5f97 (\u67e5\u9605  distance documentation )   $classifier = new KNearestNeighbors($k=4);\n$classifier = new KNearestNeighbors($k=3, new Minkowski($lambda=4));", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/classification/k-nearest-neighbors/#train", 
+            "text": "\u8bad\u7ec3\u4e00\u4e2a\u5206\u7c7b\u5668\u53ea\u63d0\u4f9b\u8bad\u7ec3\u6837\u672c\u548c\u6807\u7b7e (as  array ). \u793a\u4f8b:  $samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n$classifier = new KNearestNeighbors();\n$classifier- train($samples, $labels);  \u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6,\u8bad\u7ec3\u5206\u7c7b\u5668\u7684\u9884\u6d4b\u5c06\u57fa\u4e8e\u6570\u636e\u7684\u6240\u6709\u8bad\u7ec3\u3002", 
+            "title": "Train"
+        }, 
+        {
+            "location": "/machine-learning/classification/k-nearest-neighbors/#predict", 
+            "text": "\u9884\u6d4b\u6837\u672c\u6807\u7b7e\u4f7f\u7528  predict  \u65b9\u6cd5\u3002 \u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u672c\u6570\u7ec4:  $classifier- predict([3, 2]);\n// return 'b'\n\n$classifier- predict([[3, 2], [1, 5]]);\n// return ['b', 'a']", 
+            "title": "Predict"
+        }, 
+        {
+            "location": "/machine-learning/classification/naive-bayes/", 
+            "text": "NaiveBayes Classifier\n\n\n\u5206\u7c7b\u5668\u57fa\u4e8e\u5e94\u7528\u8d1d\u53f6\u65af\u5b9a\u7406(naive)\u5f3a\u52b2\u7684\u72ec\u7acb\u5047\u8bbe\u4e4b\u95f4\u7684\u7279\u6027\u3002\n\n\nTrain\n\n\n\u8bad\u7ec3\u4e00\u4e2a\u5206\u7c7b\u5668\u53ea\u63d0\u4f9b\u8bad\u7ec3\u6837\u672c\u548c\u6807\u7b7e (as \narray\n). \u793a\u4f8b:\n\n\n$samples = [[5, 1, 1], [1, 5, 1], [1, 1, 5]];\n$labels = ['a', 'b', 'c'];\n\n$classifier = new NaiveBayes();\n$classifier-\ntrain($samples, $labels);\n\n\n\n\n\u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6,\u8bad\u7ec3\u5206\u7c7b\u5668\u7684\u9884\u6d4b\u5c06\u57fa\u4e8e\u6570\u636e\u7684\u6240\u6709\u8bad\u7ec3\u3002\n\n\nPredict\n\n\n\u9884\u6d4b\u6837\u672c\u6807\u7b7e\u4f7f\u7528 \npredict\n \u65b9\u6cd5\u3002 \u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u672c\u6570\u7ec4:\n\n\n$classifier-\npredict([3, 1, 1]);\n// return 'a'\n\n$classifier-\npredict([[3, 1, 1], [1, 4, 1]);\n// return ['a', 'b']", 
+            "title": "NaiveBayes"
+        }, 
+        {
+            "location": "/machine-learning/classification/naive-bayes/#naivebayes-classifier", 
+            "text": "\u5206\u7c7b\u5668\u57fa\u4e8e\u5e94\u7528\u8d1d\u53f6\u65af\u5b9a\u7406(naive)\u5f3a\u52b2\u7684\u72ec\u7acb\u5047\u8bbe\u4e4b\u95f4\u7684\u7279\u6027\u3002", 
+            "title": "NaiveBayes Classifier"
+        }, 
+        {
+            "location": "/machine-learning/classification/naive-bayes/#train", 
+            "text": "\u8bad\u7ec3\u4e00\u4e2a\u5206\u7c7b\u5668\u53ea\u63d0\u4f9b\u8bad\u7ec3\u6837\u672c\u548c\u6807\u7b7e (as  array ). \u793a\u4f8b:  $samples = [[5, 1, 1], [1, 5, 1], [1, 1, 5]];\n$labels = ['a', 'b', 'c'];\n\n$classifier = new NaiveBayes();\n$classifier- train($samples, $labels);  \u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6,\u8bad\u7ec3\u5206\u7c7b\u5668\u7684\u9884\u6d4b\u5c06\u57fa\u4e8e\u6570\u636e\u7684\u6240\u6709\u8bad\u7ec3\u3002", 
+            "title": "Train"
+        }, 
+        {
+            "location": "/machine-learning/classification/naive-bayes/#predict", 
+            "text": "\u9884\u6d4b\u6837\u672c\u6807\u7b7e\u4f7f\u7528  predict  \u65b9\u6cd5\u3002 \u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u672c\u6570\u7ec4:  $classifier- predict([3, 1, 1]);\n// return 'a'\n\n$classifier- predict([[3, 1, 1], [1, 4, 1]);\n// return ['a', 'b']", 
+            "title": "Predict"
+        }, 
+        {
+            "location": "/machine-learning/regression/least-squares/", 
+            "text": "LeastSquares Linear Regression\n\n\n\u4f7f\u7528\u6700\u5c0f\u4e8c\u4e58\u6cd5\u903c\u8fd1\u89e3\u7684\u7ebf\u6027\u6a21\u578b\u3002\n\n\nTrain\n\n\n\u8bad\u7ec3\u6a21\u578b\u53ea\u9700\u63d0\u4f9b\u5217\u8f66\u6837\u672c\u548c\u76ee\u6807\u503c (as \narray\n). \u793a\u4f8b:\n\n\n$samples = [[60], [61], [62], [63], [65]];\n$targets = [3.1, 3.6, 3.8, 4, 4.1];\n\n$regression = new LeastSquares();\n$regression-\ntrain($samples, $targets);\n\n\n\n\n\u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6\u6765\u8bad\u7ec3\u6a21\u578b\uff0c\u9884\u6d4b\u5c06\u57fa\u4e8e\u6240\u6709\u7684\u8bad\u7ec3\u6570\u636e\u3002\n\n\nPredict\n\n\npredict\n \u7528\u6837\u672c\u9884\u6d4b\u6837\u672c\u76ee\u6807\u503c\u4f7f\u7528\u65b9\u6cd5\uff0c\u4ee5\u68c0\u67e5 (as \narray\n). \u793a\u4f8b:\n\n\n$regression-\npredict([64]);\n// return 4.06\n\n\n\n\nMultiple Linear Regression\n\n\n\u4e0e\u7ebf\u6027\u56de\u5f52\u76f8\u5173\u7684\u672f\u8bed\u591a\u6570\u8868\u793a\u6709\u4e24\u4e2a\u6216\u66f4\u591a\u4e2a\u6837\u672c\u53c2\u6570\u7528\u4e8e\u9884\u6d4b\u76ee\u6807\u3002\u4f8b\u5982\uff0c\u60a8\u53ef\u4ee5\u4f7f\u7528\uff1a\u91cc\u7a0b\u548c\u751f\u4ea7\u5e74\u4efd\u6765\u9884\u6d4b\u6c7d\u8f66\u7684\u4ef7\u683c\u3002\n\n\n$samples = [[73676, 1996], [77006, 1998], [10565, 2000], [146088, 1995], [15000, 2001], [65940, 2000], [9300, 2000], [93739, 1996], [153260, 1994], [17764, 2002], [57000, 1998], [15000, 2000]];\n$targets = [2000, 2750, 15500, 960, 4400, 8800, 7100, 2550, 1025, 5900, 4600, 4400];\n\n$regression = new LeastSquares();\n$regression-\ntrain($samples, $targets);\n$regression-\npredict([60000, 1996])\n// return 4094.82\n\n\n\n\nIntercept and Coefficients\n\n\n\u8bad\u7ec3\u4f60\u7684\u6a21\u578b\u540e\uff0c\u4f60\u53ef\u4ee5\u5f97\u5230\u622a\u8ddd\u548c\u7cfb\u6570\u6570\u7ec4\u3002\n\n\n$regression-\ngetIntercept();\n// return -7.9635135135131\n\n$regression-\ngetCoefficients();\n// return [array(1) {[0]=\nfloat(0.18783783783783)}]", 
+            "title": "LeastSquares"
+        }, 
+        {
+            "location": "/machine-learning/regression/least-squares/#leastsquares-linear-regression", 
+            "text": "\u4f7f\u7528\u6700\u5c0f\u4e8c\u4e58\u6cd5\u903c\u8fd1\u89e3\u7684\u7ebf\u6027\u6a21\u578b\u3002", 
+            "title": "LeastSquares Linear Regression"
+        }, 
+        {
+            "location": "/machine-learning/regression/least-squares/#train", 
+            "text": "\u8bad\u7ec3\u6a21\u578b\u53ea\u9700\u63d0\u4f9b\u5217\u8f66\u6837\u672c\u548c\u76ee\u6807\u503c (as  array ). \u793a\u4f8b:  $samples = [[60], [61], [62], [63], [65]];\n$targets = [3.1, 3.6, 3.8, 4, 4.1];\n\n$regression = new LeastSquares();\n$regression- train($samples, $targets);  \u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6\u6765\u8bad\u7ec3\u6a21\u578b\uff0c\u9884\u6d4b\u5c06\u57fa\u4e8e\u6240\u6709\u7684\u8bad\u7ec3\u6570\u636e\u3002", 
+            "title": "Train"
+        }, 
+        {
+            "location": "/machine-learning/regression/least-squares/#predict", 
+            "text": "predict  \u7528\u6837\u672c\u9884\u6d4b\u6837\u672c\u76ee\u6807\u503c\u4f7f\u7528\u65b9\u6cd5\uff0c\u4ee5\u68c0\u67e5 (as  array ). \u793a\u4f8b:  $regression- predict([64]);\n// return 4.06", 
+            "title": "Predict"
+        }, 
+        {
+            "location": "/machine-learning/regression/least-squares/#multiple-linear-regression", 
+            "text": "\u4e0e\u7ebf\u6027\u56de\u5f52\u76f8\u5173\u7684\u672f\u8bed\u591a\u6570\u8868\u793a\u6709\u4e24\u4e2a\u6216\u66f4\u591a\u4e2a\u6837\u672c\u53c2\u6570\u7528\u4e8e\u9884\u6d4b\u76ee\u6807\u3002\u4f8b\u5982\uff0c\u60a8\u53ef\u4ee5\u4f7f\u7528\uff1a\u91cc\u7a0b\u548c\u751f\u4ea7\u5e74\u4efd\u6765\u9884\u6d4b\u6c7d\u8f66\u7684\u4ef7\u683c\u3002  $samples = [[73676, 1996], [77006, 1998], [10565, 2000], [146088, 1995], [15000, 2001], [65940, 2000], [9300, 2000], [93739, 1996], [153260, 1994], [17764, 2002], [57000, 1998], [15000, 2000]];\n$targets = [2000, 2750, 15500, 960, 4400, 8800, 7100, 2550, 1025, 5900, 4600, 4400];\n\n$regression = new LeastSquares();\n$regression- train($samples, $targets);\n$regression- predict([60000, 1996])\n// return 4094.82", 
+            "title": "Multiple Linear Regression"
+        }, 
+        {
+            "location": "/machine-learning/regression/least-squares/#intercept-and-coefficients", 
+            "text": "\u8bad\u7ec3\u4f60\u7684\u6a21\u578b\u540e\uff0c\u4f60\u53ef\u4ee5\u5f97\u5230\u622a\u8ddd\u548c\u7cfb\u6570\u6570\u7ec4\u3002  $regression- getIntercept();\n// return -7.9635135135131\n\n$regression- getCoefficients();\n// return [array(1) {[0]= float(0.18783783783783)}]", 
+            "title": "Intercept and Coefficients"
+        }, 
+        {
+            "location": "/machine-learning/regression/svr/", 
+            "text": "Support Vector Regression\n\n\n\u57fa\u4e8elibsvm\u5b9e\u73b0Epsilon\u652f\u6301\u5411\u91cf\u56de\u5f52\u7684\u7c7b\u3002\n\n\nConstructor Parameters\n\n\n\n\n$kernel (int) -\u5728\u7b97\u6cd5\u4e2d\u4f7f\u7528\u7684\u5185\u6838\u7c7b\u578b (\u9ed8\u8ba4 Kernel::LINEAR)\n\n\n$degree (int) - Kernel::POLYNOMIAL \u51fd\u6570\u7b49\u7ea7 (default 3)\n\n\n$epsilon (float) -  epsilon in loss function of epsilon-SVR (\u9ed8\u8ba4 0.1)\n\n\n$cost (float) - C-SVC \u7684\u53c2\u6570C (default 1.0)\n\n\n$gamma (float) - \u2018Kernel::RBF\u2019, \u2018Kernel::POLYNOMIAL\u2019 \u548c \u2018Kernel::SIGMOID\u2019 \u5185\u6838\u7cfb\u6570\u3002 \u5982\u679c gamma \u662f \u2018null\u2019 \u5219\u5c06\u4f7f\u7528 1/features \u3002\n\n\n$coef0 (float) - \u5185\u6838\u51fd\u6570\u4e2d\u7684\u72ec\u7acb\u9879\u3002 It is only significant in \u2018Kernel::POLYNOMIAL\u2019 and \u2018Kernel::SIGMOID\u2019 (default 0.0)\n\n\n$tolerance (float) - \u7ec8\u6b62\u6807\u51c6\u5bb9\u9650 (\u9ed8\u8ba4 0.001)\n\n\n$cacheSize (int) -  \u7f13\u5b58\u5185\u5b58\u5927\u5c0f\uff08MB\uff09 (\u9ed8\u8ba4 100)\n\n\n$shrinking (bool) - \u662f\u5426\u4f7f\u7528\u7f29\u51cf\u542f\u53d1\u5f0f (\u9ed8\u8ba4 true)\n\n\n\n\n$regression = new SVR(Kernel::LINEAR);\n$regression = new SVR(Kernel::LINEAR, $degree = 3, $epsilon=10.0);\n\n\n\n\nTrain\n\n\n\u8bad\u7ec3\u6a21\u578b\u53ea\u9700\u63d0\u4f9b\u5217\u8f66\u6837\u672c\u548c\u76ee\u6807\u503c (as \narray\n). \u793a\u4f8b:\n\n\nuse Phpml\\Regression\\SVR;\nuse Phpml\\SupportVectorMachine\\Kernel;\n\n$samples = [[60], [61], [62], [63], [65]];\n$targets = [3.1, 3.6, 3.8, 4, 4.1];\n\n$regression = new SVR(Kernel::LINEAR);\n$regression-\ntrain($samples, $targets);\n\n\n\n\n\u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6\u6765\u8bad\u7ec3\u6a21\u578b\uff0c\u9884\u6d4b\u5c06\u57fa\u4e8e\u6240\u6709\u7684\u8bad\u7ec3\u6570\u636e\u3002\n\n\nPredict\n\n\n\u9884\u6d4b\u6837\u672c\u76ee\u6807\u503c\u4f7f\u7528 \npredict\n \u65b9\u6cd5\u3002\u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u54c1\u9635\u5217\uff1a\n\n\n$regression-\npredict([64])\n// return 4.03", 
+            "title": "SVR"
+        }, 
+        {
+            "location": "/machine-learning/regression/svr/#support-vector-regression", 
+            "text": "\u57fa\u4e8elibsvm\u5b9e\u73b0Epsilon\u652f\u6301\u5411\u91cf\u56de\u5f52\u7684\u7c7b\u3002", 
+            "title": "Support Vector Regression"
+        }, 
+        {
+            "location": "/machine-learning/regression/svr/#constructor-parameters", 
+            "text": "$kernel (int) -\u5728\u7b97\u6cd5\u4e2d\u4f7f\u7528\u7684\u5185\u6838\u7c7b\u578b (\u9ed8\u8ba4 Kernel::LINEAR)  $degree (int) - Kernel::POLYNOMIAL \u51fd\u6570\u7b49\u7ea7 (default 3)  $epsilon (float) -  epsilon in loss function of epsilon-SVR (\u9ed8\u8ba4 0.1)  $cost (float) - C-SVC \u7684\u53c2\u6570C (default 1.0)  $gamma (float) - \u2018Kernel::RBF\u2019, \u2018Kernel::POLYNOMIAL\u2019 \u548c \u2018Kernel::SIGMOID\u2019 \u5185\u6838\u7cfb\u6570\u3002 \u5982\u679c gamma \u662f \u2018null\u2019 \u5219\u5c06\u4f7f\u7528 1/features \u3002  $coef0 (float) - \u5185\u6838\u51fd\u6570\u4e2d\u7684\u72ec\u7acb\u9879\u3002 It is only significant in \u2018Kernel::POLYNOMIAL\u2019 and \u2018Kernel::SIGMOID\u2019 (default 0.0)  $tolerance (float) - \u7ec8\u6b62\u6807\u51c6\u5bb9\u9650 (\u9ed8\u8ba4 0.001)  $cacheSize (int) -  \u7f13\u5b58\u5185\u5b58\u5927\u5c0f\uff08MB\uff09 (\u9ed8\u8ba4 100)  $shrinking (bool) - \u662f\u5426\u4f7f\u7528\u7f29\u51cf\u542f\u53d1\u5f0f (\u9ed8\u8ba4 true)   $regression = new SVR(Kernel::LINEAR);\n$regression = new SVR(Kernel::LINEAR, $degree = 3, $epsilon=10.0);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/regression/svr/#train", 
+            "text": "\u8bad\u7ec3\u6a21\u578b\u53ea\u9700\u63d0\u4f9b\u5217\u8f66\u6837\u672c\u548c\u76ee\u6807\u503c (as  array ). \u793a\u4f8b:  use Phpml\\Regression\\SVR;\nuse Phpml\\SupportVectorMachine\\Kernel;\n\n$samples = [[60], [61], [62], [63], [65]];\n$targets = [3.1, 3.6, 3.8, 4, 4.1];\n\n$regression = new SVR(Kernel::LINEAR);\n$regression- train($samples, $targets);  \u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6\u6765\u8bad\u7ec3\u6a21\u578b\uff0c\u9884\u6d4b\u5c06\u57fa\u4e8e\u6240\u6709\u7684\u8bad\u7ec3\u6570\u636e\u3002", 
+            "title": "Train"
+        }, 
+        {
+            "location": "/machine-learning/regression/svr/#predict", 
+            "text": "\u9884\u6d4b\u6837\u672c\u76ee\u6807\u503c\u4f7f\u7528  predict  \u65b9\u6cd5\u3002\u60a8\u53ef\u4ee5\u63d0\u4f9b\u4e00\u4e2a\u6837\u54c1\u6216\u6837\u54c1\u9635\u5217\uff1a  $regression- predict([64])\n// return 4.03", 
+            "title": "Predict"
+        }, 
+        {
+            "location": "/machine-learning/clustering/k-means/", 
+            "text": "K-means clustering\n\n\nK-Means\u7b97\u6cd5\u901a\u8fc7\u5c1d\u8bd5\u5206\u79bbn\u4e2a\u76f8\u7b49\u65b9\u5dee\u7ec4\u7684\u6837\u672c\u6765\u805a\u96c6\u6570\u636e\uff0c\u4ece\u800c\u5c06\u79f0\u4e3a\u60ef\u6027\u6216\u7c07\u5185\u548c\u5e73\u65b9\u7684\u6807\u51c6\u6700\u5c0f\u5316\u3002\u8be5\u7b97\u6cd5\u9700\u8981\u6307\u5b9a\u7c07\u7684\u6570\u91cf\u3002\n\n\nConstructor Parameters\n\n\n\n\n$clustersNumber - \u8981\u67e5\u627e\u7684\u7fa4\u96c6\u6570\n\n\n$initialization - \u521d\u59cb\u5316\u65b9\u6cd5\uff0c\u9ed8\u8ba4kmeans ++\uff08\u89c1\u4e0b\u6587\uff09\n\n\n\n\n$kmeans = new KMeans(2);\n$kmeans = new KMeans(4, KMeans::INIT_RANDOM);\n\n\n\n\nClustering\n\n\n\u8981\u5c06\u6837\u672c\u5206\u6210\u7c07\uff0c\u53ea\u9700\u4f7f\u7528 \ncluster\n \u65b9\u6cd5\u5373\u53ef\u3002\u5b83\u8fd4\u56de \narray\n \u5e26\u6709\u6837\u672c\u7684\u96c6\u7fa4\u3002\n\n\n$samples = [[1, 1], [8, 7], [1, 2], [7, 8], [2, 1], [8, 9]];\n\n$kmeans = new KMeans(2);\n$kmeans-\ncluster($samples);\n// return [0=\n[[1, 1], ...], 1=\n[[8, 7], ...]] \n\n\n\n\nInitialization methods\n\n\nkmeans++ (default)\n\n\nK-means ++\u65b9\u6cd5\u4ee5\u667a\u80fd\u65b9\u5f0f\u9009\u62e9k-\u5747\u503c\u805a\u7c7b\u7684\u521d\u59cb\u805a\u7c7b\u4e2d\u5fc3\uff0c\u4ee5\u52a0\u901f\u6536\u655b\u3002\u5b83\u4f7f\u7528DASV\u64ad\u79cd\u65b9\u6cd5\u5305\u62ec\u4e3a\u7fa4\u96c6\u627e\u5230\u826f\u597d\u7684\u521d\u59cb\u8d28\u5fc3\u3002\n\n\nrandom\n\n\n\u968f\u673a\u521d\u59cb\u5316\u65b9\u6cd5\u9009\u62e9\u5b8c\u5168\u968f\u673a\u7684\u4e2d\u5fc3\u3002\u5b83\u83b7\u5f97\u7a7a\u95f4\u8fb9\u754c\uff0c\u4ee5\u907f\u514d\u5c06\u96c6\u7fa4\u4e2d\u5fc3\u4e0e\u6837\u672c\u6570\u636e\u76f8\u8ddd\u592a\u8fdc\u3002", 
+            "title": "KMeans"
+        }, 
+        {
+            "location": "/machine-learning/clustering/k-means/#k-means-clustering", 
+            "text": "K-Means\u7b97\u6cd5\u901a\u8fc7\u5c1d\u8bd5\u5206\u79bbn\u4e2a\u76f8\u7b49\u65b9\u5dee\u7ec4\u7684\u6837\u672c\u6765\u805a\u96c6\u6570\u636e\uff0c\u4ece\u800c\u5c06\u79f0\u4e3a\u60ef\u6027\u6216\u7c07\u5185\u548c\u5e73\u65b9\u7684\u6807\u51c6\u6700\u5c0f\u5316\u3002\u8be5\u7b97\u6cd5\u9700\u8981\u6307\u5b9a\u7c07\u7684\u6570\u91cf\u3002", 
+            "title": "K-means clustering"
+        }, 
+        {
+            "location": "/machine-learning/clustering/k-means/#constructor-parameters", 
+            "text": "$clustersNumber - \u8981\u67e5\u627e\u7684\u7fa4\u96c6\u6570  $initialization - \u521d\u59cb\u5316\u65b9\u6cd5\uff0c\u9ed8\u8ba4kmeans ++\uff08\u89c1\u4e0b\u6587\uff09   $kmeans = new KMeans(2);\n$kmeans = new KMeans(4, KMeans::INIT_RANDOM);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/clustering/k-means/#clustering", 
+            "text": "\u8981\u5c06\u6837\u672c\u5206\u6210\u7c07\uff0c\u53ea\u9700\u4f7f\u7528  cluster  \u65b9\u6cd5\u5373\u53ef\u3002\u5b83\u8fd4\u56de  array  \u5e26\u6709\u6837\u672c\u7684\u96c6\u7fa4\u3002  $samples = [[1, 1], [8, 7], [1, 2], [7, 8], [2, 1], [8, 9]];\n\n$kmeans = new KMeans(2);\n$kmeans- cluster($samples);\n// return [0= [[1, 1], ...], 1= [[8, 7], ...]]", 
+            "title": "Clustering"
+        }, 
+        {
+            "location": "/machine-learning/clustering/k-means/#initialization-methods", 
+            "text": "", 
+            "title": "Initialization methods"
+        }, 
+        {
+            "location": "/machine-learning/clustering/k-means/#kmeans-default", 
+            "text": "K-means ++\u65b9\u6cd5\u4ee5\u667a\u80fd\u65b9\u5f0f\u9009\u62e9k-\u5747\u503c\u805a\u7c7b\u7684\u521d\u59cb\u805a\u7c7b\u4e2d\u5fc3\uff0c\u4ee5\u52a0\u901f\u6536\u655b\u3002\u5b83\u4f7f\u7528DASV\u64ad\u79cd\u65b9\u6cd5\u5305\u62ec\u4e3a\u7fa4\u96c6\u627e\u5230\u826f\u597d\u7684\u521d\u59cb\u8d28\u5fc3\u3002", 
+            "title": "kmeans++ (default)"
+        }, 
+        {
+            "location": "/machine-learning/clustering/k-means/#random", 
+            "text": "\u968f\u673a\u521d\u59cb\u5316\u65b9\u6cd5\u9009\u62e9\u5b8c\u5168\u968f\u673a\u7684\u4e2d\u5fc3\u3002\u5b83\u83b7\u5f97\u7a7a\u95f4\u8fb9\u754c\uff0c\u4ee5\u907f\u514d\u5c06\u96c6\u7fa4\u4e2d\u5fc3\u4e0e\u6837\u672c\u6570\u636e\u76f8\u8ddd\u592a\u8fdc\u3002", 
+            "title": "random"
+        }, 
+        {
+            "location": "/machine-learning/clustering/dbscan/", 
+            "text": "DBSCAN clustering\n\n\n\u5b83\u662f\u4e00\u79cd\u57fa\u4e8e\u5bc6\u5ea6\u7684\u805a\u7c7b\u7b97\u6cd5\uff1a\u7ed9\u5b9a\u4e00\u4e9b\u7a7a\u95f4\u4e2d\u7684\u4e00\u7ec4\u70b9\uff0c\u5c06\u805a\u96c6\u5728\u4e00\u8d77\u7684\u70b9\uff08\u591a\u4e2a\u90bb\u8fd1\u90bb\u57df\u7684\u70b9\uff09\u7ec4\u5408\u5728\u4e00\u8d77\uff0c\u6807\u8bb0\u4e3a\u4f4e\u5bc6\u5ea6\u533a\u57df\uff08\u6700\u63a5\u8fd1\u7684\u533a\u57df\uff09\u7684\u79bb\u7fa4\u70b9\u90bb\u5c45\u79bb\u592a\u8fdc\uff09\u3002DBSCAN\u662f\u6700\u5e38\u89c1\u7684\u805a\u7c7b\u7b97\u6cd5\u4e4b\u4e00\uff0c\u4e5f\u662f\u79d1\u5b66\u6587\u732e\u4e2d\u6700\u5f15\u7528\u7684\u3002 \uff08\u6765\u6e90\uff1a\u7ef4\u57fa\u767e\u79d1\uff09\n\n\nConstructor Parameters\n\n\n\n\n$epsilon - \u4e24\u4e2a\u6837\u672c\u4e4b\u95f4\u7684\u6700\u5927\u8ddd\u79bb\u88ab\u8ba4\u4e3a\u5728\u540c\u4e00\u4e2a\u8bc6\u522b\u533a\n\n\n$minSamples - \u8981\u88ab\u89c6\u4e3a\u6838\u5fc3\u70b9\u7684\u70b9\u7684\u90bb\u57df\u4e2d\u7684\u6837\u672c\u6570\uff08\u8fd9\u5305\u62ec\u70b9\u672c\u8eab\uff09\n\n\n$distanceMetric - \u8ddd\u79bb\u5bf9\u8c61\uff0c\u9ed8\u8ba4\u6b27\u51e0\u91cc\u5fb7\u8ddd\u79bb (\u67e5\u770b \ndistance documentation\n)\n\n\n\n\n$dbscan = new DBSCAN($epsilon = 2, $minSamples = 3);\n$dbscan = new DBSCAN($epsilon = 2, $minSamples = 3, new Minkowski($lambda=4));\n\n\n\n\nClustering\n\n\n\u8981\u5c06\u6837\u672c\u5206\u6210\u7c07\uff0c\u53ea\u9700\u4f7f\u7528 \ncluster\n \u65b9\u6cd5\u5373\u53ef\u3002\u5b83\u8fd4\u56de \narray\n \u5e26\u6709\u6837\u672c\u7684\u96c6\u7fa4\u3002\n\n\n$samples = [[1, 1], [8, 7], [1, 2], [7, 8], [2, 1], [8, 9]];\n\n$dbscan = new DBSCAN($epsilon = 2, $minSamples = 3);\n$dbscan-\ncluster($samples);\n// return [0=\n[[1, 1], ...], 1=\n[[8, 7], ...]]", 
+            "title": "DBSCAN"
+        }, 
+        {
+            "location": "/machine-learning/clustering/dbscan/#dbscan-clustering", 
+            "text": "\u5b83\u662f\u4e00\u79cd\u57fa\u4e8e\u5bc6\u5ea6\u7684\u805a\u7c7b\u7b97\u6cd5\uff1a\u7ed9\u5b9a\u4e00\u4e9b\u7a7a\u95f4\u4e2d\u7684\u4e00\u7ec4\u70b9\uff0c\u5c06\u805a\u96c6\u5728\u4e00\u8d77\u7684\u70b9\uff08\u591a\u4e2a\u90bb\u8fd1\u90bb\u57df\u7684\u70b9\uff09\u7ec4\u5408\u5728\u4e00\u8d77\uff0c\u6807\u8bb0\u4e3a\u4f4e\u5bc6\u5ea6\u533a\u57df\uff08\u6700\u63a5\u8fd1\u7684\u533a\u57df\uff09\u7684\u79bb\u7fa4\u70b9\u90bb\u5c45\u79bb\u592a\u8fdc\uff09\u3002DBSCAN\u662f\u6700\u5e38\u89c1\u7684\u805a\u7c7b\u7b97\u6cd5\u4e4b\u4e00\uff0c\u4e5f\u662f\u79d1\u5b66\u6587\u732e\u4e2d\u6700\u5f15\u7528\u7684\u3002 \uff08\u6765\u6e90\uff1a\u7ef4\u57fa\u767e\u79d1\uff09", 
+            "title": "DBSCAN clustering"
+        }, 
+        {
+            "location": "/machine-learning/clustering/dbscan/#constructor-parameters", 
+            "text": "$epsilon - \u4e24\u4e2a\u6837\u672c\u4e4b\u95f4\u7684\u6700\u5927\u8ddd\u79bb\u88ab\u8ba4\u4e3a\u5728\u540c\u4e00\u4e2a\u8bc6\u522b\u533a  $minSamples - \u8981\u88ab\u89c6\u4e3a\u6838\u5fc3\u70b9\u7684\u70b9\u7684\u90bb\u57df\u4e2d\u7684\u6837\u672c\u6570\uff08\u8fd9\u5305\u62ec\u70b9\u672c\u8eab\uff09  $distanceMetric - \u8ddd\u79bb\u5bf9\u8c61\uff0c\u9ed8\u8ba4\u6b27\u51e0\u91cc\u5fb7\u8ddd\u79bb (\u67e5\u770b  distance documentation )   $dbscan = new DBSCAN($epsilon = 2, $minSamples = 3);\n$dbscan = new DBSCAN($epsilon = 2, $minSamples = 3, new Minkowski($lambda=4));", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/clustering/dbscan/#clustering", 
+            "text": "\u8981\u5c06\u6837\u672c\u5206\u6210\u7c07\uff0c\u53ea\u9700\u4f7f\u7528  cluster  \u65b9\u6cd5\u5373\u53ef\u3002\u5b83\u8fd4\u56de  array  \u5e26\u6709\u6837\u672c\u7684\u96c6\u7fa4\u3002  $samples = [[1, 1], [8, 7], [1, 2], [7, 8], [2, 1], [8, 9]];\n\n$dbscan = new DBSCAN($epsilon = 2, $minSamples = 3);\n$dbscan- cluster($samples);\n// return [0= [[1, 1], ...], 1= [[8, 7], ...]]", 
+            "title": "Clustering"
+        }, 
+        {
+            "location": "/machine-learning/metric/accuracy/", 
+            "text": "Accuracy\n\n\n\u7528\u4e8e\u8ba1\u7b97\u5206\u7c7b\u5668\u7cbe\u5ea6\u7684\u7c7b\u3002\n\n\nScore\n\n\n\u8ba1\u7b97\u5206\u7c7b\u5668\u7cbe\u5ea6\u5f97\u5206\u4f7f\u7528 \nscore\n \u9759\u6001\u65b9\u6cd5\u3002\u53c2\u6570\uff1a\n\n\n\n\n$actualLabels - (array) true sample labels\n\n\n$predictedLabels - (array) \u9884\u6d4b\u6807\u7b7e\uff08\u6765\u81ea\u6d4b\u8bd5\u7ec4\uff09\n\n\n$normalize - (bool) normalize\u6216not\u7ed3\u679c (default: true)\n\n\n\n\nExample\n\n\n$actualLabels = ['a', 'b', 'a', 'b'];\n$predictedLabels = ['a', 'a', 'a', 'b'];\n\nAccuracy::score($actualLabels, $predictedLabels);\n// return 0.75\n\nAccuracy::score($actualLabels, $predictedLabels, false);\n// return 3", 
+            "title": "Accuracy"
+        }, 
+        {
+            "location": "/machine-learning/metric/accuracy/#accuracy", 
+            "text": "\u7528\u4e8e\u8ba1\u7b97\u5206\u7c7b\u5668\u7cbe\u5ea6\u7684\u7c7b\u3002", 
+            "title": "Accuracy"
+        }, 
+        {
+            "location": "/machine-learning/metric/accuracy/#score", 
+            "text": "\u8ba1\u7b97\u5206\u7c7b\u5668\u7cbe\u5ea6\u5f97\u5206\u4f7f\u7528  score  \u9759\u6001\u65b9\u6cd5\u3002\u53c2\u6570\uff1a   $actualLabels - (array) true sample labels  $predictedLabels - (array) \u9884\u6d4b\u6807\u7b7e\uff08\u6765\u81ea\u6d4b\u8bd5\u7ec4\uff09  $normalize - (bool) normalize\u6216not\u7ed3\u679c (default: true)", 
+            "title": "Score"
+        }, 
+        {
+            "location": "/machine-learning/metric/accuracy/#example", 
+            "text": "$actualLabels = ['a', 'b', 'a', 'b'];\n$predictedLabels = ['a', 'a', 'a', 'b'];\n\nAccuracy::score($actualLabels, $predictedLabels);\n// return 0.75\n\nAccuracy::score($actualLabels, $predictedLabels, false);\n// return 3", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/machine-learning/metric/confusion-matrix/", 
+            "text": "Confusion Matrix\n\n\n\u7528\u4e8e\u8ba1\u7b97\u6df7\u6dc6\u77e9\u9635\u7684\u7c7b\u6765\u8bc4\u4f30\u5206\u7c7b\u7684\u51c6\u786e\u6027\u3002\n\n\nExample (all targets)\n\n\n\u4e3a\u6240\u6709\u76ee\u6807\u8ba1\u7b97ConfusionMatrix\u3002\n\n\nuse Phpml\\Metric\\ConfusionMatrix;\n\n$actualTargets = [2, 0, 2, 2, 0, 1];\n$predictedTargets = [0, 0, 2, 2, 0, 2];\n\n$confusionMatrix = ConfusionMatrix::compute($actualTargets, $predictedTargets)\n\n/*\n$confusionMatrix = [\n    [2, 0, 0],\n    [0, 0, 1],\n    [1, 0, 2],\n];\n*/\n\n\n\n\nExample (chosen targets)\n\n\n\u4e3a\u6240\u9009\u76ee\u6807\u8ba1\u7b97ConfusionMatrix\u3002\n\n\nuse Phpml\\Metric\\ConfusionMatrix;\n\n$actualTargets = ['cat', 'ant', 'cat', 'cat', 'ant', 'bird'];\n$predictedTargets = ['ant', 'ant', 'cat', 'cat', 'ant', 'cat'];\n\n$confusionMatrix = ConfusionMatrix::compute($actualTargets, $predictedTargets, ['ant', 'bird'])\n\n/*\n$confusionMatrix = [\n    [2, 0],\n    [0, 0],\n];\n*/", 
+            "title": "Confusion Matrix"
+        }, 
+        {
+            "location": "/machine-learning/metric/confusion-matrix/#confusion-matrix", 
+            "text": "\u7528\u4e8e\u8ba1\u7b97\u6df7\u6dc6\u77e9\u9635\u7684\u7c7b\u6765\u8bc4\u4f30\u5206\u7c7b\u7684\u51c6\u786e\u6027\u3002", 
+            "title": "Confusion Matrix"
+        }, 
+        {
+            "location": "/machine-learning/metric/confusion-matrix/#example-all-targets", 
+            "text": "\u4e3a\u6240\u6709\u76ee\u6807\u8ba1\u7b97ConfusionMatrix\u3002  use Phpml\\Metric\\ConfusionMatrix;\n\n$actualTargets = [2, 0, 2, 2, 0, 1];\n$predictedTargets = [0, 0, 2, 2, 0, 2];\n\n$confusionMatrix = ConfusionMatrix::compute($actualTargets, $predictedTargets)\n\n/*\n$confusionMatrix = [\n    [2, 0, 0],\n    [0, 0, 1],\n    [1, 0, 2],\n];\n*/", 
+            "title": "Example (all targets)"
+        }, 
+        {
+            "location": "/machine-learning/metric/confusion-matrix/#example-chosen-targets", 
+            "text": "\u4e3a\u6240\u9009\u76ee\u6807\u8ba1\u7b97ConfusionMatrix\u3002  use Phpml\\Metric\\ConfusionMatrix;\n\n$actualTargets = ['cat', 'ant', 'cat', 'cat', 'ant', 'bird'];\n$predictedTargets = ['ant', 'ant', 'cat', 'cat', 'ant', 'cat'];\n\n$confusionMatrix = ConfusionMatrix::compute($actualTargets, $predictedTargets, ['ant', 'bird'])\n\n/*\n$confusionMatrix = [\n    [2, 0],\n    [0, 0],\n];\n*/", 
+            "title": "Example (chosen targets)"
+        }, 
+        {
+            "location": "/machine-learning/metric/classification-report/", 
+            "text": "Classification Report\n\n\n\u8ba1\u7b97\u4e3b\u5206\u7c7b\u5668\u5ea6\u91cf\u7684\u7c7b\uff1a precision, recall, F1 score and support.\n\n\nReport\n\n\n\u8981\u751f\u6210\u62a5\u544a\uff0c\u60a8\u5fc5\u987b\u63d0\u4f9b\u4ee5\u4e0b\u53c2\u6570\uff1a\n\n\n\n\n$actualLabels - (array) true sample labels\n\n\n$predictedLabels - (array) \u9884\u6d4b\u6807\u7b7e\uff08\u6765\u81ea\u6d4b\u8bd5\u7ec4\uff09\n\n\n\n\nuse Phpml\\Metric\\ClassificationReport;\n\n$actualLabels = ['cat', 'ant', 'bird', 'bird', 'bird'];\n$predictedLabels = ['cat', 'cat', 'bird', 'bird', 'ant'];\n\n$report = new ClassificationReport($actualLabels, $predictedLabels);\n\n\n\n\nMetrics\n\n\n\u521b\u5efa\u62a5\u544a\u540e\uff0c\u60a8\u53ef\u4ee5\u7ed8\u5236\u5176\u5404\u81ea\u7684\u6307\u6807\uff1a\n\n\n\n\nprecision (\ngetPrecision()\n) - \u76f8\u5173\u7684\u68c0\u7d22\u5230\u7684\u5b9e\u4f8b\u7684\u5206\u6570\n\n\nrecall (\ngetRecall()\n) - \u68c0\u7d22\u5230\u7684\u76f8\u5173\u5b9e\u4f8b\u7684\u5206\u6570\n\n\nF1 score (\ngetF1score()\n) - \u6d4b\u8bd5\u6d4b\u8bd5\u7684\u51c6\u786e\u6027\n\n\nsupport (\ngetSupport()\n) - \u6d4b\u8bd5\u6837\u672c\u6570\n\n\n\n\n$precision = $report-\ngetPrecision();\n\n// $precision = ['cat' =\n 0.5, 'ant' =\n 0.0, 'bird' =\n 1.0];\n\n\n\n\nExample\n\n\nuse Phpml\\Metric\\ClassificationReport;\n\n$actualLabels = ['cat', 'ant', 'bird', 'bird', 'bird'];\n$predictedLabels = ['cat', 'cat', 'bird', 'bird', 'ant'];\n\n$report = new ClassificationReport($actualLabels, $predictedLabels);\n\n$report-\ngetPrecision();\n// ['cat' =\n 0.5, 'ant' =\n 0.0, 'bird' =\n 1.0]\n\n$report-\ngetRecall();\n// ['cat' =\n 1.0, 'ant' =\n 0.0, 'bird' =\n 0.67]\n\n$report-\ngetF1score();\n// ['cat' =\n 0.67, 'ant' =\n 0.0, 'bird' =\n 0.80]\n\n$report-\ngetSupport();\n// ['cat' =\n 1, 'ant' =\n 1, 'bird' =\n 3]\n\n$report-\ngetAverage();\n// ['precision' =\n 0.75, 'recall' =\n 0.83, 'f1score' =\n 0.73]", 
+            "title": "Classification Report"
+        }, 
+        {
+            "location": "/machine-learning/metric/classification-report/#classification-report", 
+            "text": "\u8ba1\u7b97\u4e3b\u5206\u7c7b\u5668\u5ea6\u91cf\u7684\u7c7b\uff1a precision, recall, F1 score and support.", 
+            "title": "Classification Report"
+        }, 
+        {
+            "location": "/machine-learning/metric/classification-report/#report", 
+            "text": "\u8981\u751f\u6210\u62a5\u544a\uff0c\u60a8\u5fc5\u987b\u63d0\u4f9b\u4ee5\u4e0b\u53c2\u6570\uff1a   $actualLabels - (array) true sample labels  $predictedLabels - (array) \u9884\u6d4b\u6807\u7b7e\uff08\u6765\u81ea\u6d4b\u8bd5\u7ec4\uff09   use Phpml\\Metric\\ClassificationReport;\n\n$actualLabels = ['cat', 'ant', 'bird', 'bird', 'bird'];\n$predictedLabels = ['cat', 'cat', 'bird', 'bird', 'ant'];\n\n$report = new ClassificationReport($actualLabels, $predictedLabels);", 
+            "title": "Report"
+        }, 
+        {
+            "location": "/machine-learning/metric/classification-report/#metrics", 
+            "text": "\u521b\u5efa\u62a5\u544a\u540e\uff0c\u60a8\u53ef\u4ee5\u7ed8\u5236\u5176\u5404\u81ea\u7684\u6307\u6807\uff1a   precision ( getPrecision() ) - \u76f8\u5173\u7684\u68c0\u7d22\u5230\u7684\u5b9e\u4f8b\u7684\u5206\u6570  recall ( getRecall() ) - \u68c0\u7d22\u5230\u7684\u76f8\u5173\u5b9e\u4f8b\u7684\u5206\u6570  F1 score ( getF1score() ) - \u6d4b\u8bd5\u6d4b\u8bd5\u7684\u51c6\u786e\u6027  support ( getSupport() ) - \u6d4b\u8bd5\u6837\u672c\u6570   $precision = $report- getPrecision();\n\n// $precision = ['cat' =  0.5, 'ant' =  0.0, 'bird' =  1.0];", 
+            "title": "Metrics"
+        }, 
+        {
+            "location": "/machine-learning/metric/classification-report/#example", 
+            "text": "use Phpml\\Metric\\ClassificationReport;\n\n$actualLabels = ['cat', 'ant', 'bird', 'bird', 'bird'];\n$predictedLabels = ['cat', 'cat', 'bird', 'bird', 'ant'];\n\n$report = new ClassificationReport($actualLabels, $predictedLabels);\n\n$report- getPrecision();\n// ['cat' =  0.5, 'ant' =  0.0, 'bird' =  1.0]\n\n$report- getRecall();\n// ['cat' =  1.0, 'ant' =  0.0, 'bird' =  0.67]\n\n$report- getF1score();\n// ['cat' =  0.67, 'ant' =  0.0, 'bird' =  0.80]\n\n$report- getSupport();\n// ['cat' =  1, 'ant' =  1, 'bird' =  3]\n\n$report- getAverage();\n// ['precision' =  0.75, 'recall' =  0.83, 'f1score' =  0.73]", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/machine-learning/workflow/pipeline/", 
+            "text": "Pipeline\n\n\n\u5728\u673a\u5668\u5b66\u4e60\u4e2d\uff0c\u901a\u5e38\u8fd0\u884c\u4e00\u7cfb\u5217\u7b97\u6cd5\u6765\u5904\u7406\u548c\u5b66\u4e60\u6570\u636e\u96c6\u3002\u4f8b\u5982\uff1a\n\n\n* Split each document\u2019s text into tokens.\n* Convert each document\u2019s words into a numerical feature vector ([Token Count Vectorizer](machine-learning/feature-extraction/token-count-vectorizer/)).\n* Learn a prediction model using the feature vectors and labels.\n\n\n\nPHP-ML\u8868\u793a\u4f5c\u4e3a\u6d41\u6c34\u7ebf\u7684\u5de5\u4f5c\u6d41\u7a0b\uff0c\u5176\u4e2d\u5305\u542b\u53d8\u538b\u5668\u5e8f\u5217\u548c\u4f30\u8ba1\u5668\u3002\n\n\nConstructor Parameters\n\n\n\n\n$transformers (array|Transformer[]) - \u5b9e\u73b0Transformer\u63a5\u53e3\u7684\u5bf9\u8c61\u5e8f\u5217\n\n\n$estimator (Estimator) - \u53ef\u4ee5\u8bad\u7ec3\u548c\u9884\u6d4b\u7684\u4f30\u8ba1\n\n\n\n\nuse Phpml\\Classification\\SVC;\nuse Phpml\\FeatureExtraction\\TfIdfTransformer;\nuse Phpml\\Pipeline;\n\n$transformers = [\n    new TfIdfTransformer(),\n];\n$estimator = new SVC();\n\n$pipeline = new Pipeline($transformers, $estimator);\n\n\n\n\nExample\n\n\n\u9996\u5148\u6211\u4eec\u7684\u7ba1\u9053\u4ee3\u66ff\u7f3a\u5931\u503c\uff0c\u7136\u540e\u5bf9\u6837\u672c\u8fdb\u884c\u5f52\u4e00\u5316\uff0c\u6700\u540e\u8bad\u7ec3SVC\u4f30\u8ba1\u3002\u5982\u6b64\u5236\u5907\u7684\u7ba1\u9053\u91cd\u590d\u6bcf\u4e2a\u8f6c\u5316\u6b65\u9aa4\u7528\u4e8e\u9884\u6d4b\u6837\u54c1\u3002\n\n\nuse Phpml\\Classification\\SVC;\nuse Phpml\\Pipeline;\nuse Phpml\\Preprocessing\\Imputer;\nuse Phpml\\Preprocessing\\Normalizer;\nuse Phpml\\Preprocessing\\Imputer\\Strategy\\MostFrequentStrategy;\n\n$transformers = [\n    new Imputer(null, new MostFrequentStrategy()),\n    new Normalizer(),\n];\n$estimator = new SVC();\n\n$samples = [\n    [1, -1, 2],\n    [2, 0, null],\n    [null, 1, -1],\n];\n\n$targets = [\n    4,\n    1,\n    4,\n];\n\n$pipeline = new Pipeline($transformers, $estimator);\n$pipeline-\ntrain($samples, $targets);\n\n$predicted = $pipeline-\npredict([[0, 0, 0]]);\n\n// $predicted == 4", 
+            "title": "Pipeline"
+        }, 
+        {
+            "location": "/machine-learning/workflow/pipeline/#pipeline", 
+            "text": "\u5728\u673a\u5668\u5b66\u4e60\u4e2d\uff0c\u901a\u5e38\u8fd0\u884c\u4e00\u7cfb\u5217\u7b97\u6cd5\u6765\u5904\u7406\u548c\u5b66\u4e60\u6570\u636e\u96c6\u3002\u4f8b\u5982\uff1a  * Split each document\u2019s text into tokens.\n* Convert each document\u2019s words into a numerical feature vector ([Token Count Vectorizer](machine-learning/feature-extraction/token-count-vectorizer/)).\n* Learn a prediction model using the feature vectors and labels.  PHP-ML\u8868\u793a\u4f5c\u4e3a\u6d41\u6c34\u7ebf\u7684\u5de5\u4f5c\u6d41\u7a0b\uff0c\u5176\u4e2d\u5305\u542b\u53d8\u538b\u5668\u5e8f\u5217\u548c\u4f30\u8ba1\u5668\u3002", 
+            "title": "Pipeline"
+        }, 
+        {
+            "location": "/machine-learning/workflow/pipeline/#constructor-parameters", 
+            "text": "$transformers (array|Transformer[]) - \u5b9e\u73b0Transformer\u63a5\u53e3\u7684\u5bf9\u8c61\u5e8f\u5217  $estimator (Estimator) - \u53ef\u4ee5\u8bad\u7ec3\u548c\u9884\u6d4b\u7684\u4f30\u8ba1   use Phpml\\Classification\\SVC;\nuse Phpml\\FeatureExtraction\\TfIdfTransformer;\nuse Phpml\\Pipeline;\n\n$transformers = [\n    new TfIdfTransformer(),\n];\n$estimator = new SVC();\n\n$pipeline = new Pipeline($transformers, $estimator);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/workflow/pipeline/#example", 
+            "text": "\u9996\u5148\u6211\u4eec\u7684\u7ba1\u9053\u4ee3\u66ff\u7f3a\u5931\u503c\uff0c\u7136\u540e\u5bf9\u6837\u672c\u8fdb\u884c\u5f52\u4e00\u5316\uff0c\u6700\u540e\u8bad\u7ec3SVC\u4f30\u8ba1\u3002\u5982\u6b64\u5236\u5907\u7684\u7ba1\u9053\u91cd\u590d\u6bcf\u4e2a\u8f6c\u5316\u6b65\u9aa4\u7528\u4e8e\u9884\u6d4b\u6837\u54c1\u3002  use Phpml\\Classification\\SVC;\nuse Phpml\\Pipeline;\nuse Phpml\\Preprocessing\\Imputer;\nuse Phpml\\Preprocessing\\Normalizer;\nuse Phpml\\Preprocessing\\Imputer\\Strategy\\MostFrequentStrategy;\n\n$transformers = [\n    new Imputer(null, new MostFrequentStrategy()),\n    new Normalizer(),\n];\n$estimator = new SVC();\n\n$samples = [\n    [1, -1, 2],\n    [2, 0, null],\n    [null, 1, -1],\n];\n\n$targets = [\n    4,\n    1,\n    4,\n];\n\n$pipeline = new Pipeline($transformers, $estimator);\n$pipeline- train($samples, $targets);\n\n$predicted = $pipeline- predict([[0, 0, 0]]);\n\n// $predicted == 4", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/machine-learning/neural-network/multilayer-perceptron/", 
+            "text": "MultilayerPerceptron\n\n\n\u591a\u5c42\u611f\u77e5\u5668\uff08MLP\uff09\u662f\u524d\u9988\u4eba\u5de5\u795e\u7ecf\u7f51\u7edc\u6a21\u578b\uff0c\u5176\u5c06\u8f93\u5165\u6570\u636e\u96c6\u5408\u6620\u5c04\u5230\u4e00\u7ec4\u9002\u5f53\u7684\u8f93\u51fa\u3002\n\n\nConstructor Parameters\n\n\n\n\n$layers (array) -\u5177\u6709\u5c42\u914d\u7f6e\u7684\u6570\u7ec4\uff0c\u6bcf\u4e2a\u503c\u8868\u793a\u6bcf\u5c42\u4e2d\u7684\u795e\u7ecf\u5143\u6570\n\n\n$activationFunction (ActivationFunction) - \u795e\u7ecf\u5143\u6fc0\u6d3b\u529f\u80fd\n\n\n\n\nuse Phpml\\NeuralNetwork\\Network\\MultilayerPerceptron;\n$mlp = new MultilayerPerceptron([2, 2, 1]);\n\n// 2 nodes in input layer, 2 nodes in first hidden layer and 1 node in output layer \n\n\n\n\nMethods\n\n\n\n\nsetInput(array $input)\n\n\ngetOutput()\n\n\ngetLayers()\n\n\naddLayer(Layer $layer)\n\n\n\n\nActivation Functions\n\n\n\n\nBinaryStep\n\n\nGaussian\n\n\nHyperbolicTangent\n\n\nSigmoid (default)", 
+            "title": "Multilayer Perceptron"
+        }, 
+        {
+            "location": "/machine-learning/neural-network/multilayer-perceptron/#multilayerperceptron", 
+            "text": "\u591a\u5c42\u611f\u77e5\u5668\uff08MLP\uff09\u662f\u524d\u9988\u4eba\u5de5\u795e\u7ecf\u7f51\u7edc\u6a21\u578b\uff0c\u5176\u5c06\u8f93\u5165\u6570\u636e\u96c6\u5408\u6620\u5c04\u5230\u4e00\u7ec4\u9002\u5f53\u7684\u8f93\u51fa\u3002", 
+            "title": "MultilayerPerceptron"
+        }, 
+        {
+            "location": "/machine-learning/neural-network/multilayer-perceptron/#constructor-parameters", 
+            "text": "$layers (array) -\u5177\u6709\u5c42\u914d\u7f6e\u7684\u6570\u7ec4\uff0c\u6bcf\u4e2a\u503c\u8868\u793a\u6bcf\u5c42\u4e2d\u7684\u795e\u7ecf\u5143\u6570  $activationFunction (ActivationFunction) - \u795e\u7ecf\u5143\u6fc0\u6d3b\u529f\u80fd   use Phpml\\NeuralNetwork\\Network\\MultilayerPerceptron;\n$mlp = new MultilayerPerceptron([2, 2, 1]);\n\n// 2 nodes in input layer, 2 nodes in first hidden layer and 1 node in output layer", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/neural-network/multilayer-perceptron/#methods", 
+            "text": "setInput(array $input)  getOutput()  getLayers()  addLayer(Layer $layer)", 
+            "title": "Methods"
+        }, 
+        {
+            "location": "/machine-learning/neural-network/multilayer-perceptron/#activation-functions", 
+            "text": "BinaryStep  Gaussian  HyperbolicTangent  Sigmoid (default)", 
+            "title": "Activation Functions"
+        }, 
+        {
+            "location": "/machine-learning/neural-network/backpropagation/", 
+            "text": "Backpropagation\n\n\nBackpropagation \"backward propagation of errors\"\u7684\u7f29\u5199\uff0c\u662f\u8bad\u7ec3\u4eba\u9020\u795e\u7ecf\u7f51\u7edc\u7684\u5e38\u7528\u65b9\u6cd5\uff0c\u4e0e\u8bf8\u5982\u68af\u5ea6\u4e0b\u964d\u7684\u4f18\u5316\u65b9\u6cd5\u7ed3\u5408\u4f7f\u7528\u3002\n\n\nConstructor Parameters\n\n\n\n\n$network (Network) - \u7f51\u7edc\u8bad\u7ec3 (for example MultilayerPerceptron instance)\n\n\n$theta (int) - \u7f51\u7edctheta\u53c2\u6570\n\n\n\n\nuse Phpml\\NeuralNetwork\\Network\\MultilayerPerceptron;\nuse Phpml\\NeuralNetwork\\Training\\Backpropagation;\n\n$network = new MultilayerPerceptron([2, 2, 1]);\n$training = new Backpropagation($network);\n\n\n\n\nTraining\n\n\n\u5f02\u5e38\u8bad\u7ec3\u793a\u4f8b\uff1a\n\n\n$training-\ntrain(\n    $samples = [[1, 0], [0, 1], [1, 1], [0, 0]],\n    $targets = [[1], [1], [0], [0]],\n    $desiredError = 0.2,\n    $maxIteraions = 30000\n);\n\n\n\n\n\u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6\u8bad\u7ec3\u795e\u7ecf\u7f51\u7edc\uff0c\u9884\u6d4b\u5c06\u57fa\u4e8e\u6240\u6709\u8bad\u7ec3\u6570\u636e\u3002", 
+            "title": "Backpropagation training"
+        }, 
+        {
+            "location": "/machine-learning/neural-network/backpropagation/#backpropagation", 
+            "text": "Backpropagation \"backward propagation of errors\"\u7684\u7f29\u5199\uff0c\u662f\u8bad\u7ec3\u4eba\u9020\u795e\u7ecf\u7f51\u7edc\u7684\u5e38\u7528\u65b9\u6cd5\uff0c\u4e0e\u8bf8\u5982\u68af\u5ea6\u4e0b\u964d\u7684\u4f18\u5316\u65b9\u6cd5\u7ed3\u5408\u4f7f\u7528\u3002", 
+            "title": "Backpropagation"
+        }, 
+        {
+            "location": "/machine-learning/neural-network/backpropagation/#constructor-parameters", 
+            "text": "$network (Network) - \u7f51\u7edc\u8bad\u7ec3 (for example MultilayerPerceptron instance)  $theta (int) - \u7f51\u7edctheta\u53c2\u6570   use Phpml\\NeuralNetwork\\Network\\MultilayerPerceptron;\nuse Phpml\\NeuralNetwork\\Training\\Backpropagation;\n\n$network = new MultilayerPerceptron([2, 2, 1]);\n$training = new Backpropagation($network);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/neural-network/backpropagation/#training", 
+            "text": "\u5f02\u5e38\u8bad\u7ec3\u793a\u4f8b\uff1a  $training- train(\n    $samples = [[1, 0], [0, 1], [1, 1], [0, 0]],\n    $targets = [[1], [1], [0], [0]],\n    $desiredError = 0.2,\n    $maxIteraions = 30000\n);  \u60a8\u53ef\u4ee5\u4f7f\u7528\u591a\u4e2a\u6570\u636e\u96c6\u8bad\u7ec3\u795e\u7ecf\u7f51\u7edc\uff0c\u9884\u6d4b\u5c06\u57fa\u4e8e\u6240\u6709\u8bad\u7ec3\u6570\u636e\u3002", 
+            "title": "Training"
+        }, 
+        {
+            "location": "/machine-learning/cross-validation/random-split/", 
+            "text": "Random Split\n\n\nOne of the simplest methods from Cross-validation is implemented as \nRandomSpilt\n class. Samples are split to two groups: train group and test group. You can adjust number of samples in each group.\n\n\nConstructor Parameters\n\n\n\n\n$dataset - object that implements \nDataset\n interface\n\n\n$testSize - a fraction of test split (float, from 0 to 1, default: 0.3)\n\n\n$seed - seed for random generator (e.g. for tests)\n\n\n\n\n$randomSplit = new RandomSplit($dataset, 0.2);\n\n\n\n\nSamples and labels groups\n\n\nTo get samples or labels from test and train group you can use getters:\n\n\n$dataset = new RandomSplit($dataset, 0.3, 1234);\n\n// train group\n$dataset-\ngetTrainSamples();\n$dataset-\ngetTrainLabels();\n\n// test group\n$dataset-\ngetTestSamples();\n$dataset-\ngetTestLabels();", 
+            "title": "RandomSplit"
+        }, 
+        {
+            "location": "/machine-learning/cross-validation/random-split/#random-split", 
+            "text": "One of the simplest methods from Cross-validation is implemented as  RandomSpilt  class. Samples are split to two groups: train group and test group. You can adjust number of samples in each group.", 
+            "title": "Random Split"
+        }, 
+        {
+            "location": "/machine-learning/cross-validation/random-split/#constructor-parameters", 
+            "text": "$dataset - object that implements  Dataset  interface  $testSize - a fraction of test split (float, from 0 to 1, default: 0.3)  $seed - seed for random generator (e.g. for tests)   $randomSplit = new RandomSplit($dataset, 0.2);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/cross-validation/random-split/#samples-and-labels-groups", 
+            "text": "To get samples or labels from test and train group you can use getters:  $dataset = new RandomSplit($dataset, 0.3, 1234);\n\n// train group\n$dataset- getTrainSamples();\n$dataset- getTrainLabels();\n\n// test group\n$dataset- getTestSamples();\n$dataset- getTestLabels();", 
+            "title": "Samples and labels groups"
+        }, 
+        {
+            "location": "/machine-learning/cross-validation/stratified-random-split/", 
+            "text": "Stratified Random Split\n\n\nAnalogously to \nRandomSpilt\n class samples are split to two groups: train group and test group.\nDistribution of samples takes into account their targets and trying to divide them equally.\nYou can adjust number of samples in each group.\n\n\nConstructor Parameters\n\n\n\n\n$dataset - object that implements \nDataset\n interface\n\n\n$testSize - a fraction of test split (float, from 0 to 1, default: 0.3)\n\n\n$seed - seed for random generator (e.g. for tests)\n\n\n\n\n$split = new StratifiedRandomSplit($dataset, 0.2);\n\n\n\n\nSamples and labels groups\n\n\nTo get samples or labels from test and train group you can use getters:\n\n\n$dataset = new StratifiedRandomSplit($dataset, 0.3, 1234);\n\n// train group\n$dataset-\ngetTrainSamples();\n$dataset-\ngetTrainLabels();\n\n// test group\n$dataset-\ngetTestSamples();\n$dataset-\ngetTestLabels();\n\n\n\n\nExample\n\n\n$dataset = new ArrayDataset(\n    $samples = [[1], [2], [3], [4], [5], [6], [7], [8]],\n    $targets = ['a', 'a', 'a', 'a', 'b', 'b', 'b', 'b']\n);\n\n$split = new StratifiedRandomSplit($dataset, 0.5);\n\n\n\n\nSplit will have equals amount of each target. Two of the target \na\n and two of \nb\n.", 
+            "title": "Stratified Random Split"
+        }, 
+        {
+            "location": "/machine-learning/cross-validation/stratified-random-split/#stratified-random-split", 
+            "text": "Analogously to  RandomSpilt  class samples are split to two groups: train group and test group.\nDistribution of samples takes into account their targets and trying to divide them equally.\nYou can adjust number of samples in each group.", 
+            "title": "Stratified Random Split"
+        }, 
+        {
+            "location": "/machine-learning/cross-validation/stratified-random-split/#constructor-parameters", 
+            "text": "$dataset - object that implements  Dataset  interface  $testSize - a fraction of test split (float, from 0 to 1, default: 0.3)  $seed - seed for random generator (e.g. for tests)   $split = new StratifiedRandomSplit($dataset, 0.2);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/cross-validation/stratified-random-split/#samples-and-labels-groups", 
+            "text": "To get samples or labels from test and train group you can use getters:  $dataset = new StratifiedRandomSplit($dataset, 0.3, 1234);\n\n// train group\n$dataset- getTrainSamples();\n$dataset- getTrainLabels();\n\n// test group\n$dataset- getTestSamples();\n$dataset- getTestLabels();", 
+            "title": "Samples and labels groups"
+        }, 
+        {
+            "location": "/machine-learning/cross-validation/stratified-random-split/#example", 
+            "text": "$dataset = new ArrayDataset(\n    $samples = [[1], [2], [3], [4], [5], [6], [7], [8]],\n    $targets = ['a', 'a', 'a', 'a', 'b', 'b', 'b', 'b']\n);\n\n$split = new StratifiedRandomSplit($dataset, 0.5);  Split will have equals amount of each target. Two of the target  a  and two of  b .", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/machine-learning/preprocessing/normalization/", 
+            "text": "Normalization\n\n\n\u6807\u51c6\u5316\u662f\u5c06\u5355\u4e2a\u6837\u672c\u7f29\u653e\u4e3a\u5355\u4f4d\u89c4\u8303\u7684\u8fc7\u7a0b\u3002\n\n\nL2 norm\n\n\nhttp://mathworld.wolfram.com/L2-Norm.html\n\n\nExample:\n\n\nuse Phpml\\Preprocessing\\Normalizer;\n\n$samples = [\n    [1, -1, 2],\n    [2, 0, 0],\n    [0, 1, -1],\n];\n\n$normalizer = new Normalizer();\n$normalizer-\npreprocess($samples);\n\n/*\n$samples = [\n  [0.4, -0.4, 0.81],\n  [1.0, 0.0, 0.0],\n  [0.0, 0.7, -0.7],\n];\n*/\n\n\n\n\n\nL1 norm\n\n\nhttp://mathworld.wolfram.com/L1-Norm.html\n\n\nExample:\n\n\nuse Phpml\\Preprocessing\\Normalizer;\n\n$samples = [\n    [1, -1, 2],\n    [2, 0, 0],\n    [0, 1, -1],\n];\n\n$normalizer = new Normalizer(Normalizer::NORM_L1);\n$normalizer-\npreprocess($samples);\n\n/*\n$samples = [\n   [0.25, -0.25, 0.5],\n   [1.0, 0.0, 0.0],\n   [0.0, 0.5, -0.5],\n];\n*/", 
+            "title": "Normalization"
+        }, 
+        {
+            "location": "/machine-learning/preprocessing/normalization/#normalization", 
+            "text": "\u6807\u51c6\u5316\u662f\u5c06\u5355\u4e2a\u6837\u672c\u7f29\u653e\u4e3a\u5355\u4f4d\u89c4\u8303\u7684\u8fc7\u7a0b\u3002", 
+            "title": "Normalization"
+        }, 
+        {
+            "location": "/machine-learning/preprocessing/normalization/#l2-norm", 
+            "text": "http://mathworld.wolfram.com/L2-Norm.html  Example:  use Phpml\\Preprocessing\\Normalizer;\n\n$samples = [\n    [1, -1, 2],\n    [2, 0, 0],\n    [0, 1, -1],\n];\n\n$normalizer = new Normalizer();\n$normalizer- preprocess($samples);\n\n/*\n$samples = [\n  [0.4, -0.4, 0.81],\n  [1.0, 0.0, 0.0],\n  [0.0, 0.7, -0.7],\n];\n*/", 
+            "title": "L2 norm"
+        }, 
+        {
+            "location": "/machine-learning/preprocessing/normalization/#l1-norm", 
+            "text": "http://mathworld.wolfram.com/L1-Norm.html  Example:  use Phpml\\Preprocessing\\Normalizer;\n\n$samples = [\n    [1, -1, 2],\n    [2, 0, 0],\n    [0, 1, -1],\n];\n\n$normalizer = new Normalizer(Normalizer::NORM_L1);\n$normalizer- preprocess($samples);\n\n/*\n$samples = [\n   [0.25, -0.25, 0.5],\n   [1.0, 0.0, 0.0],\n   [0.0, 0.5, -0.5],\n];\n*/", 
+            "title": "L1 norm"
+        }, 
+        {
+            "location": "/machine-learning/preprocessing/imputation-missing-values/", 
+            "text": "Imputation missing values\n\n\n\u7531\u4e8e\u5404\u79cd\u539f\u56e0\uff0c\u8bb8\u591a\u73b0\u5b9e\u4e16\u754c\u7684\u6570\u636e\u96c6\u5305\u542b\u7f3a\u5c11\u7684\u503c\uff0c\u901a\u5e38\u7f16\u7801\u4e3a\u7a7a\u767d\uff0cNaN\u6216\u5176\u4ed6\u5360\u4f4d\u7b26\u3002\u8981\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\uff0c\u4f60\u53ef\u4ee5\u4f7f\u7528 \nImputer\n \u8be5\u7c7b\u3002\n\n\nConstructor Parameters\n\n\n\n\n$missingValue (mixed) -  \u6b64\u503c\u5c06\u88ab\u66ff\u6362 (default null)\n\n\n$strategy (Strategy) -  \u63d2\u8865\u7b56\u7565 (read to use: MeanStrategy, MedianStrategy, MostFrequentStrategy)\n\n\n$axis (int) - \u7528\u4e8e\u7b56\u7565\u7684\u8f74\uff0cImputer::AXIS_COLUMN or Imputer::AXIS_ROW\n\n\n\n\n$imputer = new Imputer(null, new MeanStrategy(), Imputer::AXIS_COLUMN);\n$imputer = new Imputer(null, new MedianStrategy(), Imputer::AXIS_ROW);\n\n\n\n\nStrategy\n\n\n\n\nMeanStrategy - \u4f7f\u7528\u6cbf\u8f74\u7684\u5e73\u5747\u503c\u66ff\u6362\u7f3a\u5931\u503c\n\n\nMedianStrategy - \u4f7f\u7528\u6cbf\u8f74\u7684\u4e2d\u4f4d\u6570\u66ff\u6362\u7f3a\u5931\u503c\n\n\nMostFrequentStrategy - \u4f7f\u7528\u8f74\u4e0a\u6700\u9891\u7e41\u7684\u503c\u66ff\u6362\u4e22\u5931\n\n\n\n\nExample of use\n\n\nuse Phpml\\Preprocessing\\Imputer;\nuse Phpml\\Preprocessing\\Imputer\\Strategy\\MeanStrategy;\n\n$data = [\n    [1, null, 3, 4],\n    [4, 3, 2, 1],\n    [null, 6, 7, 8],\n    [8, 7, null, 5],\n];\n\n$imputer = new Imputer(null, new MeanStrategy(), Imputer::AXIS_COLUMN);\n$imputer-\ntransform($data);\n\n/*\n$data = [\n    [1, 5.33, 3, 4],\n    [4, 3, 2, 1],\n    [4.33, 6, 7, 8],\n    [8, 7, 4, 5],\n];\n*/", 
+            "title": "Imputation missing values"
+        }, 
+        {
+            "location": "/machine-learning/preprocessing/imputation-missing-values/#imputation-missing-values", 
+            "text": "\u7531\u4e8e\u5404\u79cd\u539f\u56e0\uff0c\u8bb8\u591a\u73b0\u5b9e\u4e16\u754c\u7684\u6570\u636e\u96c6\u5305\u542b\u7f3a\u5c11\u7684\u503c\uff0c\u901a\u5e38\u7f16\u7801\u4e3a\u7a7a\u767d\uff0cNaN\u6216\u5176\u4ed6\u5360\u4f4d\u7b26\u3002\u8981\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\uff0c\u4f60\u53ef\u4ee5\u4f7f\u7528  Imputer  \u8be5\u7c7b\u3002", 
+            "title": "Imputation missing values"
+        }, 
+        {
+            "location": "/machine-learning/preprocessing/imputation-missing-values/#constructor-parameters", 
+            "text": "$missingValue (mixed) -  \u6b64\u503c\u5c06\u88ab\u66ff\u6362 (default null)  $strategy (Strategy) -  \u63d2\u8865\u7b56\u7565 (read to use: MeanStrategy, MedianStrategy, MostFrequentStrategy)  $axis (int) - \u7528\u4e8e\u7b56\u7565\u7684\u8f74\uff0cImputer::AXIS_COLUMN or Imputer::AXIS_ROW   $imputer = new Imputer(null, new MeanStrategy(), Imputer::AXIS_COLUMN);\n$imputer = new Imputer(null, new MedianStrategy(), Imputer::AXIS_ROW);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/preprocessing/imputation-missing-values/#strategy", 
+            "text": "MeanStrategy - \u4f7f\u7528\u6cbf\u8f74\u7684\u5e73\u5747\u503c\u66ff\u6362\u7f3a\u5931\u503c  MedianStrategy - \u4f7f\u7528\u6cbf\u8f74\u7684\u4e2d\u4f4d\u6570\u66ff\u6362\u7f3a\u5931\u503c  MostFrequentStrategy - \u4f7f\u7528\u8f74\u4e0a\u6700\u9891\u7e41\u7684\u503c\u66ff\u6362\u4e22\u5931", 
+            "title": "Strategy"
+        }, 
+        {
+            "location": "/machine-learning/preprocessing/imputation-missing-values/#example-of-use", 
+            "text": "use Phpml\\Preprocessing\\Imputer;\nuse Phpml\\Preprocessing\\Imputer\\Strategy\\MeanStrategy;\n\n$data = [\n    [1, null, 3, 4],\n    [4, 3, 2, 1],\n    [null, 6, 7, 8],\n    [8, 7, null, 5],\n];\n\n$imputer = new Imputer(null, new MeanStrategy(), Imputer::AXIS_COLUMN);\n$imputer- transform($data);\n\n/*\n$data = [\n    [1, 5.33, 3, 4],\n    [4, 3, 2, 1],\n    [4.33, 6, 7, 8],\n    [8, 7, 4, 5],\n];\n*/", 
+            "title": "Example of use"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/token-count-vectorizer/", 
+            "text": "Token Count Vectorizer\n\n\n\u5c06\u6587\u672c\u6837\u672c\u96c6\u5408\u8f6c\u6362\u4e3a\u4ee4\u724c\u8ba1\u6570\u5411\u91cf\u3002\n\n\nConstructor Parameters\n\n\n\n\n$tokenizer (Tokenizer) - tokenizer object (see below)\n\n\n$minDF (float) -  \u5ffd\u7565\u5177\u6709\u4e25\u683c\u4f4e\u4e8e\u7ed9\u5b9a\u9608\u503c\u7684\u91c7\u6837\u9891\u7387\u7684\u4ee4\u724c\u3002\u8fd9\u4e2a\u503c\u5728\u6587\u732e\u4e2d\u4e5f\u88ab\u79f0\u4e3a\u622a\u6b62\u503c\u3002(default 0)\n\n\n\n\nuse Phpml\\FeatureExtraction\\TokenCountVectorizer;\nuse Phpml\\Tokenization\\WhitespaceTokenizer;\n\n$vectorizer = new TokenCountVectorizer(new WhitespaceTokenizer());\n\n\n\n\nTransformation\n\n\n\u8981\u8f6c\u6362\u6587\u672c\u6837\u672c\u7684\u96c6\u5408\u4f7f\u7528 \ntransform\n\u65b9\u6cd5\u3002\u4f8b\uff1a\n\n\n$samples = [\n    'Lorem ipsum dolor sit amet dolor',\n    'Mauris placerat ipsum dolor',\n    'Mauris diam eros fringilla diam',\n];\n\n$vectorizer = new TokenCountVectorizer(new WhitespaceTokenizer());\n$vectorizer-\ntransform($samples)\n// return $vector = [\n//    [0 =\n 1, 1 =\n 1, 2 =\n 2, 3 =\n 1, 4 =\n 1],\n//    [5 =\n 1, 6 =\n 1, 1 =\n 1, 2 =\n 1],\n//    [5 =\n 1, 7 =\n 2, 8 =\n 1, 9 =\n 1],\n//];\n\n\n\n\n\nVocabulary\n\n\n\u60a8\u53ef\u4ee5\u4f7f\u7528 \ngetVocabulary()\n \u65b9\u6cd5\u63d0\u53d6\u8bcd\u6c47\u3002\u4f8b\uff1a\n\n\n$vectorizer-\ngetVocabulary();\n// return $vocabulary = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'Mauris', 'placerat', 'diam', 'eros', 'fringilla'];\n\n\n\n\nTokenizers\n\n\n\n\nWhitespaceTokenizer - \u7531\u7a7a\u683c\u9009\u62e9\u4ee4\u724c\u3002\n\n\nWordTokenizer - \u9009\u62e92\u4e2a\u6216\u66f4\u591a\u5b57\u6bcd\u6570\u5b57\u5b57\u7b26\u7684\u6807\u8bb0\uff08\u6807\u70b9\u7b26\u53f7\u88ab\u5b8c\u5168\u5ffd\u7565\uff0c\u5e76\u59cb\u7ec8\u88ab\u89c6\u4e3a\u4ee4\u724c\u5206\u9694\u7b26\uff09\u3002", 
+            "title": "Token Count Vectorizer"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/token-count-vectorizer/#token-count-vectorizer", 
+            "text": "\u5c06\u6587\u672c\u6837\u672c\u96c6\u5408\u8f6c\u6362\u4e3a\u4ee4\u724c\u8ba1\u6570\u5411\u91cf\u3002", 
+            "title": "Token Count Vectorizer"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/token-count-vectorizer/#constructor-parameters", 
+            "text": "$tokenizer (Tokenizer) - tokenizer object (see below)  $minDF (float) -  \u5ffd\u7565\u5177\u6709\u4e25\u683c\u4f4e\u4e8e\u7ed9\u5b9a\u9608\u503c\u7684\u91c7\u6837\u9891\u7387\u7684\u4ee4\u724c\u3002\u8fd9\u4e2a\u503c\u5728\u6587\u732e\u4e2d\u4e5f\u88ab\u79f0\u4e3a\u622a\u6b62\u503c\u3002(default 0)   use Phpml\\FeatureExtraction\\TokenCountVectorizer;\nuse Phpml\\Tokenization\\WhitespaceTokenizer;\n\n$vectorizer = new TokenCountVectorizer(new WhitespaceTokenizer());", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/token-count-vectorizer/#transformation", 
+            "text": "\u8981\u8f6c\u6362\u6587\u672c\u6837\u672c\u7684\u96c6\u5408\u4f7f\u7528  transform \u65b9\u6cd5\u3002\u4f8b\uff1a  $samples = [\n    'Lorem ipsum dolor sit amet dolor',\n    'Mauris placerat ipsum dolor',\n    'Mauris diam eros fringilla diam',\n];\n\n$vectorizer = new TokenCountVectorizer(new WhitespaceTokenizer());\n$vectorizer- transform($samples)\n// return $vector = [\n//    [0 =  1, 1 =  1, 2 =  2, 3 =  1, 4 =  1],\n//    [5 =  1, 6 =  1, 1 =  1, 2 =  1],\n//    [5 =  1, 7 =  2, 8 =  1, 9 =  1],\n//];", 
+            "title": "Transformation"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/token-count-vectorizer/#vocabulary", 
+            "text": "\u60a8\u53ef\u4ee5\u4f7f\u7528  getVocabulary()  \u65b9\u6cd5\u63d0\u53d6\u8bcd\u6c47\u3002\u4f8b\uff1a  $vectorizer- getVocabulary();\n// return $vocabulary = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'Mauris', 'placerat', 'diam', 'eros', 'fringilla'];", 
+            "title": "Vocabulary"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/token-count-vectorizer/#tokenizers", 
+            "text": "WhitespaceTokenizer - \u7531\u7a7a\u683c\u9009\u62e9\u4ee4\u724c\u3002  WordTokenizer - \u9009\u62e92\u4e2a\u6216\u66f4\u591a\u5b57\u6bcd\u6570\u5b57\u5b57\u7b26\u7684\u6807\u8bb0\uff08\u6807\u70b9\u7b26\u53f7\u88ab\u5b8c\u5168\u5ffd\u7565\uff0c\u5e76\u59cb\u7ec8\u88ab\u89c6\u4e3a\u4ee4\u724c\u5206\u9694\u7b26\uff09\u3002", 
+            "title": "Tokenizers"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/tf-idf-transformer/", 
+            "text": "Tf-idf Transformer\n\n\nTf\u2013idf, \u662f\u672f\u8bed\u9891\u7387\u9006\u6587\u6863\u9891\u7387\u7684\u7f29\u5199\uff0c\u662f\u4e00\u4e2a\u6570\u5b57\u7edf\u8ba1\uff0c\u65e8\u5728\u53cd\u6620\u8bcd\u6c47\u5bf9\u96c6\u5408\u6216\u8bed\u6599\u5e93\u4e2d\u7684\u6587\u6863\u7684\u91cd\u8981\u6027\u3002\n\n\nConstructor Parameters\n\n\n\n\n$samples (array) - \u9002\u5408tf-idf\u6a21\u578b\u7684\u6837\u672c\n\n\n\n\nuse Phpml\\FeatureExtraction\\TfIdfTransformer;\n\n$samples = [\n    [1, 2, 4],\n    [0, 2, 1]\n];\n\n$transformer = new TfIdfTransformer($samples);\n\n\n\n\nTransformation\n\n\n\u8981\u8f6c\u6362\u6587\u672c\u6837\u672c\u7684\u96c6\u5408\u4f7f\u7528 \ntransform\n\u65b9\u6cd5\u3002\u4f8b\uff1a\n\n\nuse Phpml\\FeatureExtraction\\TfIdfTransformer;\n\n$samples = [\n    [0 =\n 1, 1 =\n 1, 2 =\n 2, 3 =\n 1, 4 =\n 0, 5 =\n 0],\n    [0 =\n 1, 1 =\n 1, 2 =\n 0, 3 =\n 0, 4 =\n 2, 5 =\n 3],\n];\n\n$transformer = new TfIdfTransformer($samples);\n$transformer-\ntransform($samples);\n\n/*\n$samples = [\n   [0 =\n 0, 1 =\n 0, 2 =\n 0.602, 3 =\n 0.301, 4 =\n 0, 5 =\n 0],\n   [0 =\n 0, 1 =\n 0, 2 =\n 0, 3 =\n 0, 4 =\n 0.602, 5 =\n 0.903],\n];\n*/", 
+            "title": "Tf-idf Transformer"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/tf-idf-transformer/#tf-idf-transformer", 
+            "text": "Tf\u2013idf, \u662f\u672f\u8bed\u9891\u7387\u9006\u6587\u6863\u9891\u7387\u7684\u7f29\u5199\uff0c\u662f\u4e00\u4e2a\u6570\u5b57\u7edf\u8ba1\uff0c\u65e8\u5728\u53cd\u6620\u8bcd\u6c47\u5bf9\u96c6\u5408\u6216\u8bed\u6599\u5e93\u4e2d\u7684\u6587\u6863\u7684\u91cd\u8981\u6027\u3002", 
+            "title": "Tf-idf Transformer"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/tf-idf-transformer/#constructor-parameters", 
+            "text": "$samples (array) - \u9002\u5408tf-idf\u6a21\u578b\u7684\u6837\u672c   use Phpml\\FeatureExtraction\\TfIdfTransformer;\n\n$samples = [\n    [1, 2, 4],\n    [0, 2, 1]\n];\n\n$transformer = new TfIdfTransformer($samples);", 
+            "title": "Constructor Parameters"
+        }, 
+        {
+            "location": "/machine-learning/feature-extraction/tf-idf-transformer/#transformation", 
+            "text": "\u8981\u8f6c\u6362\u6587\u672c\u6837\u672c\u7684\u96c6\u5408\u4f7f\u7528  transform \u65b9\u6cd5\u3002\u4f8b\uff1a  use Phpml\\FeatureExtraction\\TfIdfTransformer;\n\n$samples = [\n    [0 =  1, 1 =  1, 2 =  2, 3 =  1, 4 =  0, 5 =  0],\n    [0 =  1, 1 =  1, 2 =  0, 3 =  0, 4 =  2, 5 =  3],\n];\n\n$transformer = new TfIdfTransformer($samples);\n$transformer- transform($samples);\n\n/*\n$samples = [\n   [0 =  0, 1 =  0, 2 =  0.602, 3 =  0.301, 4 =  0, 5 =  0],\n   [0 =  0, 1 =  0, 2 =  0, 3 =  0, 4 =  0.602, 5 =  0.903],\n];\n*/", 
+            "title": "Transformation"
+        }, 
+        {
+            "location": "/machine-learning/datasets/array-dataset/", 
+            "text": "ArrayDataset\n\n\n\u5c06\u6570\u636e\u4fdd\u5b58\u4e3aPHP  \narray\n\u7c7b\u578b\u7684Helper\u7c7b\u3002\u5b9e\u73b0 \nDataset\n\u5728\u5176\u4ed6\u7c7b\u4e2d\u5927\u91cf\u4f7f\u7528\u7684\u63a5\u53e3\u3002\n\n\nConstructors Parameters\n\n\n\n\n$samples - (array) \u7684\u6837\u672c\n\n\n$labels - (array) \u7684\u6807\u7b7e\n\n\n\n\n$dataset = new ArrayDataset([[1, 1], [2, 1], [3, 2], [4, 1]], ['a', 'a', 'b', 'b']);\n\n\n\n\nSamples and labels\n\n\n\u8981\u83b7\u53d6\u6837\u54c1\u6216\u6807\u7b7e\uff0c\u60a8\u53ef\u4ee5\u4f7f\u7528 getters:\n\n\n$dataset-\ngetSamples();\n$dataset-\ngetTargets();", 
+            "title": "Array Dataset"
+        }, 
+        {
+            "location": "/machine-learning/datasets/array-dataset/#arraydataset", 
+            "text": "\u5c06\u6570\u636e\u4fdd\u5b58\u4e3aPHP   array \u7c7b\u578b\u7684Helper\u7c7b\u3002\u5b9e\u73b0  Dataset \u5728\u5176\u4ed6\u7c7b\u4e2d\u5927\u91cf\u4f7f\u7528\u7684\u63a5\u53e3\u3002", 
+            "title": "ArrayDataset"
+        }, 
+        {
+            "location": "/machine-learning/datasets/array-dataset/#constructors-parameters", 
+            "text": "$samples - (array) \u7684\u6837\u672c  $labels - (array) \u7684\u6807\u7b7e   $dataset = new ArrayDataset([[1, 1], [2, 1], [3, 2], [4, 1]], ['a', 'a', 'b', 'b']);", 
+            "title": "Constructors Parameters"
+        }, 
+        {
+            "location": "/machine-learning/datasets/array-dataset/#samples-and-labels", 
+            "text": "\u8981\u83b7\u53d6\u6837\u54c1\u6216\u6807\u7b7e\uff0c\u60a8\u53ef\u4ee5\u4f7f\u7528 getters:  $dataset- getSamples();\n$dataset- getTargets();", 
+            "title": "Samples and labels"
+        }, 
+        {
+            "location": "/machine-learning/datasets/csv-dataset/", 
+            "text": "CsvDataset\n\n\n\u4eceCSV\u6587\u4ef6\u52a0\u8f7d\u6570\u636e\u7684\u52a9\u624b\u7c7b\u3002\u5b83\u6269\u5c55\u4e86 \nArrayDataset\n.\n\n\nConstructors Parameters\n\n\n\n\n$filepath - (string) \u6587\u4ef6\u8def\u5f84\n\n\n$features - (int) \u7279\u5f81\u5217\u6570\uff08\u4ece\u7b2c\u4e00\u5217\u5f00\u59cb\uff09\uff0c\u6700\u540e\u4e00\u5217\u5fc5\u987b\u662f\u4e00\u4e2a\u6807\u7b7e\n\n\n$headingRow - (bool) define\u662f\u6587\u4ef6\u6709\u4e00\u4e2a\u6807\u9898\u884c\uff08\u5982\u679ctrue\u7b2c\u4e00\u884c\u5c06\u88ab\u5ffd\u7565\uff09\n\n\n\n\n$dataset = new CsvDataset('dataset.csv', 2, true);\n\n\n\n\nSee \nArrayDataset\n for more information.", 
+            "title": "CSV Dataset"
+        }, 
+        {
+            "location": "/machine-learning/datasets/csv-dataset/#csvdataset", 
+            "text": "\u4eceCSV\u6587\u4ef6\u52a0\u8f7d\u6570\u636e\u7684\u52a9\u624b\u7c7b\u3002\u5b83\u6269\u5c55\u4e86  ArrayDataset .", 
+            "title": "CsvDataset"
+        }, 
+        {
+            "location": "/machine-learning/datasets/csv-dataset/#constructors-parameters", 
+            "text": "$filepath - (string) \u6587\u4ef6\u8def\u5f84  $features - (int) \u7279\u5f81\u5217\u6570\uff08\u4ece\u7b2c\u4e00\u5217\u5f00\u59cb\uff09\uff0c\u6700\u540e\u4e00\u5217\u5fc5\u987b\u662f\u4e00\u4e2a\u6807\u7b7e  $headingRow - (bool) define\u662f\u6587\u4ef6\u6709\u4e00\u4e2a\u6807\u9898\u884c\uff08\u5982\u679ctrue\u7b2c\u4e00\u884c\u5c06\u88ab\u5ffd\u7565\uff09   $dataset = new CsvDataset('dataset.csv', 2, true);  See  ArrayDataset  for more information.", 
+            "title": "Constructors Parameters"
+        }, 
+        {
+            "location": "/machine-learning/datasets/files-dataset/", 
+            "text": "FilesDataset\n\n\n\u4ece\u6587\u4ef6\u52a0\u8f7d\u6570\u636e\u96c6\u7684\u52a9\u624b\u7c7b\u3002\u4f7f\u7528\u6587\u4ef6\u5939\u540d\u79f0\u4f5c\u4e3a\u76ee\u6807\u3002\u5b83\u6269\u5c55\u4e86 \nArrayDataset\n.\n\n\nConstructors Parameters\n\n\n\n\n$rootPath - (string)\u5305\u542b\u6587\u4ef6\u6570\u636e\u96c6\u7684\u6839\u6587\u4ef6\u5939\u7684\u8def\u5f84\n\n\n\n\nuse Phpml\\Dataset\\FilesDataset;\n\n$dataset = new FilesDataset('path/to/data');\n\n\n\n\n\u67e5\u770b \nArrayDataset\n\u4ee5\u83b7\u53d6\u66f4\u591a\u4fe1\u606f\u3002\n\n\nExample\n\n\n\u6587\u4ef6\u7ed3\u6784\uff1a\n\n\ndata\n    business\n        001.txt\n        002.txt\n        ...\n    entertainment\n        001.txt\n        002.txt\n        ...\n    politics\n        001.txt\n        002.txt\n        ...\n    sport\n        001.txt\n        002.txt\n        ...\n    tech\n        001.txt\n        002.txt\n        ...\n\n\n\n\n\u52a0\u8f7d\u6587\u4ef6\u6570\u636e \nFilesDataset\n: \n\n\nuse Phpml\\Dataset\\FilesDataset;\n\n$dataset = new FilesDataset('path/to/data');\n\n$dataset-\ngetSamples()[0][0]  // content from file path/to/data/business/001.txt\n$dataset-\ngetTargets()[0]     // business\n\n$dataset-\ngetSamples()[40][0] // content from file path/to/data/tech/001.txt\n$dataset-\ngetTargets()[0]     // tech", 
+            "title": "Files Dataset"
+        }, 
+        {
+            "location": "/machine-learning/datasets/files-dataset/#filesdataset", 
+            "text": "\u4ece\u6587\u4ef6\u52a0\u8f7d\u6570\u636e\u96c6\u7684\u52a9\u624b\u7c7b\u3002\u4f7f\u7528\u6587\u4ef6\u5939\u540d\u79f0\u4f5c\u4e3a\u76ee\u6807\u3002\u5b83\u6269\u5c55\u4e86  ArrayDataset .", 
+            "title": "FilesDataset"
+        }, 
+        {
+            "location": "/machine-learning/datasets/files-dataset/#constructors-parameters", 
+            "text": "$rootPath - (string)\u5305\u542b\u6587\u4ef6\u6570\u636e\u96c6\u7684\u6839\u6587\u4ef6\u5939\u7684\u8def\u5f84   use Phpml\\Dataset\\FilesDataset;\n\n$dataset = new FilesDataset('path/to/data');  \u67e5\u770b  ArrayDataset \u4ee5\u83b7\u53d6\u66f4\u591a\u4fe1\u606f\u3002", 
+            "title": "Constructors Parameters"
+        }, 
+        {
+            "location": "/machine-learning/datasets/files-dataset/#example", 
+            "text": "\u6587\u4ef6\u7ed3\u6784\uff1a  data\n    business\n        001.txt\n        002.txt\n        ...\n    entertainment\n        001.txt\n        002.txt\n        ...\n    politics\n        001.txt\n        002.txt\n        ...\n    sport\n        001.txt\n        002.txt\n        ...\n    tech\n        001.txt\n        002.txt\n        ...  \u52a0\u8f7d\u6587\u4ef6\u6570\u636e  FilesDataset :   use Phpml\\Dataset\\FilesDataset;\n\n$dataset = new FilesDataset('path/to/data');\n\n$dataset- getSamples()[0][0]  // content from file path/to/data/business/001.txt\n$dataset- getTargets()[0]     // business\n\n$dataset- getSamples()[40][0] // content from file path/to/data/tech/001.txt\n$dataset- getTargets()[0]     // tech", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/iris/", 
+            "text": "Iris Dataset\n\n\nMost popular and widely available dataset of iris flower measurement and class names. \n\n\nSpecification\n\n\n| Classes               | 3     |\n| Samples per class     | 50    |\n| Samples total         | 150   |\n| Features per sample   | 4     |\n\n\nLoad\n\n\nTo load Iris dataset simple use:\n\n\nuse Phpml\\Dataset\\Demo\\Iris;\n\n$dataset = new Iris();\n\n\n\n\nSeveral samples example\n\n\nsepal length,sepal width,petal length,petal width,class\n5.1,3.5,1.4,0.2,Iris-setosa\n4.9,3.0,1.4,0.2,Iris-setosa\n4.7,3.2,1.3,0.2,Iris-setosa\n7.0,3.2,4.7,1.4,Iris-versicolor\n6.4,3.2,4.5,1.5,Iris-versicolor\n6.9,3.1,4.9,1.5,Iris-versicolor\n6.3,3.3,6.0,2.5,Iris-virginica\n5.8,2.7,5.1,1.9,Iris-virginica\n7.1,3.0,5.9,2.1,Iris-virginica\n6.3,2.9,5.6,1.8,Iris-virginicacs", 
+            "title": "Iris"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/iris/#iris-dataset", 
+            "text": "Most popular and widely available dataset of iris flower measurement and class names.", 
+            "title": "Iris Dataset"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/iris/#specification", 
+            "text": "| Classes               | 3     |\n| Samples per class     | 50    |\n| Samples total         | 150   |\n| Features per sample   | 4     |", 
+            "title": "Specification"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/iris/#load", 
+            "text": "To load Iris dataset simple use:  use Phpml\\Dataset\\Demo\\Iris;\n\n$dataset = new Iris();", 
+            "title": "Load"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/iris/#several-samples-example", 
+            "text": "sepal length,sepal width,petal length,petal width,class\n5.1,3.5,1.4,0.2,Iris-setosa\n4.9,3.0,1.4,0.2,Iris-setosa\n4.7,3.2,1.3,0.2,Iris-setosa\n7.0,3.2,4.7,1.4,Iris-versicolor\n6.4,3.2,4.5,1.5,Iris-versicolor\n6.9,3.1,4.9,1.5,Iris-versicolor\n6.3,3.3,6.0,2.5,Iris-virginica\n5.8,2.7,5.1,1.9,Iris-virginica\n7.1,3.0,5.9,2.1,Iris-virginica\n6.3,2.9,5.6,1.8,Iris-virginicacs", 
+            "title": "Several samples example"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/wine/", 
+            "text": "Wine Dataset\n\n\nThese data are the results of a chemical analysis of wines grown in the same region in Italy but derived from three different cultivars. The analysis determined the quantities of 13 constituents found in each of the three types of wines. \n\n\nSpecification\n\n\n| Classes               | 3     |\n| Samples per class     | class 1 59; class 2 71; class 3 48    |\n| Samples total         | 178   |\n| Features per sample   | 13     |\n\n\nLoad\n\n\nTo load Wine dataset simple use:\n\n\nuse Phpml\\Dataset\\Demo\\Wine;\n\n$dataset = new Wine();\n\n\n\n\nSeveral samples example\n\n\nalcohol,malic acid,ash,alcalinity of ash,magnesium,total phenols,flavanoids,nonflavanoid phenols,proanthocyanins,color intensity,hue,OD280/OD315 of diluted wines,proline,class\n14.23,1.71,2.43,15.6,127,2.8,3.06,.28,2.29,5.64,1.04,3.92,1065,1\n13.2,1.78,2.14,11.2,100,2.65,2.76,.26,1.28,4.38,1.05,3.4,1050,1\n13.16,2.36,2.67,18.6,101,2.8,3.24,.3,2.81,5.68,1.03,3.17,1185,1\n14.37,1.95,2.5,16.8,113,3.85,3.49,.24,2.18,7.8,.86,3.45,1480,1\n13.24,2.59,2.87,21,118,2.8,2.69,.39,1.82,4.32,1.04,2.93,735,1\n14.2,1.76,2.45,15.2,112,3.27,3.39,.34,1.97,6.75,1.05,2.85,1450,1\n14.39,1.87,2.45,14.6,96,2.5,2.52,.3,1.98,5.25,1.02,3.58,1290,1\n14.06,2.15,2.61,17.6,121,2.6,2.51,.31,1.25,5.05,1.06,3.58,1295,1\n14.83,1.64,2.17,14,97,2.8,2.98,.29,1.98,5.2,1.08,2.85,1045,1", 
+            "title": "Wine"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/wine/#wine-dataset", 
+            "text": "These data are the results of a chemical analysis of wines grown in the same region in Italy but derived from three different cultivars. The analysis determined the quantities of 13 constituents found in each of the three types of wines.", 
+            "title": "Wine Dataset"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/wine/#specification", 
+            "text": "| Classes               | 3     |\n| Samples per class     | class 1 59; class 2 71; class 3 48    |\n| Samples total         | 178   |\n| Features per sample   | 13     |", 
+            "title": "Specification"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/wine/#load", 
+            "text": "To load Wine dataset simple use:  use Phpml\\Dataset\\Demo\\Wine;\n\n$dataset = new Wine();", 
+            "title": "Load"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/wine/#several-samples-example", 
+            "text": "alcohol,malic acid,ash,alcalinity of ash,magnesium,total phenols,flavanoids,nonflavanoid phenols,proanthocyanins,color intensity,hue,OD280/OD315 of diluted wines,proline,class\n14.23,1.71,2.43,15.6,127,2.8,3.06,.28,2.29,5.64,1.04,3.92,1065,1\n13.2,1.78,2.14,11.2,100,2.65,2.76,.26,1.28,4.38,1.05,3.4,1050,1\n13.16,2.36,2.67,18.6,101,2.8,3.24,.3,2.81,5.68,1.03,3.17,1185,1\n14.37,1.95,2.5,16.8,113,3.85,3.49,.24,2.18,7.8,.86,3.45,1480,1\n13.24,2.59,2.87,21,118,2.8,2.69,.39,1.82,4.32,1.04,2.93,735,1\n14.2,1.76,2.45,15.2,112,3.27,3.39,.34,1.97,6.75,1.05,2.85,1450,1\n14.39,1.87,2.45,14.6,96,2.5,2.52,.3,1.98,5.25,1.02,3.58,1290,1\n14.06,2.15,2.61,17.6,121,2.6,2.51,.31,1.25,5.05,1.06,3.58,1295,1\n14.83,1.64,2.17,14,97,2.8,2.98,.29,1.98,5.2,1.08,2.85,1045,1", 
+            "title": "Several samples example"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/glass/", 
+            "text": "Glass Dataset\n\n\nFrom USA Forensic Science Service; 6 types of glass; defined in terms of their oxide content (i.e. Na, Fe, K, etc)\n\n\nSpecification\n\n\n| Classes               | 6     |\n| Samples total         | 214   |\n| Features per sample   | 9     |\n\n\nSamples per class:\n * 70 float processed building windows\n * 17 float processed vehicle windows\n * 76 non-float processed building windows\n * 13 containers\n * 9 tableware\n * 29 headlamps\n\n\nLoad\n\n\nTo load Glass dataset simple use:\n\n\nuse Phpml\\Dataset\\Demo\\Glass;\n\n$dataset = new Glass();\n\n\n\n\nSeveral samples example\n\n\nRI: refractive index,Na: Sodium,Mg: Magnesium,Al: Aluminum,Si: Silicon,K: Potassium,Ca: Calcium,Ba: Barium,Fe: Iron,type of glass\n1.52101,13.64,4.49,1.10,71.78,0.06,8.75,0.00,0.00,building_windows_float_processed\n1.51761,13.89,3.60,1.36,72.73,0.48,7.83,0.00,0.00,building_windows_float_processed\n1.51618,13.53,3.55,1.54,72.99,0.39,7.78,0.00,0.00,building_windows_float_processed\n1.51766,13.21,3.69,1.29,72.61,0.57,8.22,0.00,0.00,building_windows_float_processed\n1.51742,13.27,3.62,1.24,73.08,0.55,8.07,0.00,0.00,building_windows_float_processed\n1.51596,12.79,3.61,1.62,72.97,0.64,8.07,0.00,0.26,building_windows_float_processed\n1.51743,13.30,3.60,1.14,73.09,0.58,8.17,0.00,0.00,building_windows_float_processed\n1.51756,13.15,3.61,1.05,73.24,0.57,8.24,0.00,0.00,building_windows_float_processed\n1.51918,14.04,3.58,1.37,72.08,0.56,8.30,0.00,0.00,building_windows_float_processed", 
+            "title": "Glass"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/glass/#glass-dataset", 
+            "text": "From USA Forensic Science Service; 6 types of glass; defined in terms of their oxide content (i.e. Na, Fe, K, etc)", 
+            "title": "Glass Dataset"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/glass/#specification", 
+            "text": "| Classes               | 6     |\n| Samples total         | 214   |\n| Features per sample   | 9     |  Samples per class:\n * 70 float processed building windows\n * 17 float processed vehicle windows\n * 76 non-float processed building windows\n * 13 containers\n * 9 tableware\n * 29 headlamps", 
+            "title": "Specification"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/glass/#load", 
+            "text": "To load Glass dataset simple use:  use Phpml\\Dataset\\Demo\\Glass;\n\n$dataset = new Glass();", 
+            "title": "Load"
+        }, 
+        {
+            "location": "/machine-learning/datasets/demo/glass/#several-samples-example", 
+            "text": "RI: refractive index,Na: Sodium,Mg: Magnesium,Al: Aluminum,Si: Silicon,K: Potassium,Ca: Calcium,Ba: Barium,Fe: Iron,type of glass\n1.52101,13.64,4.49,1.10,71.78,0.06,8.75,0.00,0.00,building_windows_float_processed\n1.51761,13.89,3.60,1.36,72.73,0.48,7.83,0.00,0.00,building_windows_float_processed\n1.51618,13.53,3.55,1.54,72.99,0.39,7.78,0.00,0.00,building_windows_float_processed\n1.51766,13.21,3.69,1.29,72.61,0.57,8.22,0.00,0.00,building_windows_float_processed\n1.51742,13.27,3.62,1.24,73.08,0.55,8.07,0.00,0.00,building_windows_float_processed\n1.51596,12.79,3.61,1.62,72.97,0.64,8.07,0.00,0.26,building_windows_float_processed\n1.51743,13.30,3.60,1.14,73.09,0.58,8.17,0.00,0.00,building_windows_float_processed\n1.51756,13.15,3.61,1.05,73.24,0.57,8.24,0.00,0.00,building_windows_float_processed\n1.51918,14.04,3.58,1.37,72.08,0.56,8.30,0.00,0.00,building_windows_float_processed", 
+            "title": "Several samples example"
+        }, 
+        {
+            "location": "/machine-learning/model-manager/persistency/", 
+            "text": "Persistency\n\n\n\u60a8\u53ef\u4ee5\u4fdd\u5b58\u7ecf\u8fc7\u57f9\u8bad\u7684\u6a21\u578b\u4ee5\u5907\u5c06\u6765\u4f7f\u7528 \u901a\u8fc7\u5c06\u5e8f\u5217\u5316\u4f30\u8ba1\u5668\u4fdd\u5b58\u5e76\u6062\u590d\u4e3a\u6587\u4ef6\u800c\u5b9e\u73b0\u7684\u8bf7\u6c42\u7684\u6301\u7eed\u6027\u3002\n\n\nExample\n\n\nuse Phpml\\Classification\\KNearestNeighbors;\nuse Phpml\\ModelManager;\n\n$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n$classifier = new KNearestNeighbors();\n$classifier-\ntrain($samples, $labels);\n\n$filepath = '/path/to/store/the/model';\n$modelManager = new ModelManager();\n$modelManager-\nsaveToFile($classifier, $filepath);\n\n$restoredClassifier = $modelManager-\nrestoreFromFile($filepath);\n$restoredClassifier-\npredict([3, 2]);\n// return 'b'", 
+            "title": "Persistency"
+        }, 
+        {
+            "location": "/machine-learning/model-manager/persistency/#persistency", 
+            "text": "\u60a8\u53ef\u4ee5\u4fdd\u5b58\u7ecf\u8fc7\u57f9\u8bad\u7684\u6a21\u578b\u4ee5\u5907\u5c06\u6765\u4f7f\u7528 \u901a\u8fc7\u5c06\u5e8f\u5217\u5316\u4f30\u8ba1\u5668\u4fdd\u5b58\u5e76\u6062\u590d\u4e3a\u6587\u4ef6\u800c\u5b9e\u73b0\u7684\u8bf7\u6c42\u7684\u6301\u7eed\u6027\u3002", 
+            "title": "Persistency"
+        }, 
+        {
+            "location": "/machine-learning/model-manager/persistency/#example", 
+            "text": "use Phpml\\Classification\\KNearestNeighbors;\nuse Phpml\\ModelManager;\n\n$samples = [[1, 3], [1, 4], [2, 4], [3, 1], [4, 1], [4, 2]];\n$labels = ['a', 'a', 'a', 'b', 'b', 'b'];\n\n$classifier = new KNearestNeighbors();\n$classifier- train($samples, $labels);\n\n$filepath = '/path/to/store/the/model';\n$modelManager = new ModelManager();\n$modelManager- saveToFile($classifier, $filepath);\n\n$restoredClassifier = $modelManager- restoreFromFile($filepath);\n$restoredClassifier- predict([3, 2]);\n// return 'b'", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/math/distance/", 
+            "text": "Distance\n\n\nSelected algorithms require the use of a function for calculating the distance.\n\n\nEuclidean\n\n\nClass for calculation Euclidean distance.\n\n\n\n\nTo calculate Euclidean distance:\n\n\n$a = [4, 6];\n$b = [2, 5];\n\n$euclidean = new Euclidean();\n$euclidean-\ndistance($a, $b);\n// return 2.2360679774998\n\n\n\n\nManhattan\n\n\nClass for calculation Manhattan distance.\n\n\n\n\nTo calculate Manhattan distance:\n\n\n$a = [4, 6];\n$b = [2, 5];\n\n$manhattan = new Manhattan();\n$manhattan-\ndistance($a, $b);\n// return 3\n\n\n\n\nChebyshev\n\n\nClass for calculation Chebyshev distance.\n\n\n\n\nTo calculate Chebyshev distance:\n\n\n$a = [4, 6];\n$b = [2, 5];\n\n$chebyshev = new Chebyshev();\n$chebyshev-\ndistance($a, $b);\n// return 2\n\n\n\n\nMinkowski\n\n\nClass for calculation Minkowski distance.\n\n\n\n\nTo calculate Minkowski distance:\n\n\n$a = [4, 6];\n$b = [2, 5];\n\n$minkowski = new Minkowski();\n$minkowski-\ndistance($a, $b);\n// return 2.080\n\n\n\n\nYou can provide the \nlambda\n parameter:\n\n\n$a = [6, 10, 3];\n$b = [2, 5, 5];\n\n$minkowski = new Minkowski($lambda = 5);\n$minkowski-\ndistance($a, $b);\n// return 5.300\n\n\n\n\nCustom distance\n\n\nTo apply your own function of distance use \nDistance\n interface. Example\n\n\nclass CustomDistance implements Distance\n{\n    /**\n     * @param array $a\n     * @param array $b\n     *\n     * @return float\n     */\n    public function distance(array $a, array $b): float\n    {\n        $distance = [];\n        $count = count($a);\n\n        for ($i = 0; $i \n $count; ++$i) {\n            $distance[] = $a[$i] * $b[$i];\n        }\n\n        return min($distance);    \n    }\n}", 
+            "title": "Distance"
+        }, 
+        {
+            "location": "/math/distance/#distance", 
+            "text": "Selected algorithms require the use of a function for calculating the distance.", 
+            "title": "Distance"
+        }, 
+        {
+            "location": "/math/distance/#euclidean", 
+            "text": "Class for calculation Euclidean distance.   To calculate Euclidean distance:  $a = [4, 6];\n$b = [2, 5];\n\n$euclidean = new Euclidean();\n$euclidean- distance($a, $b);\n// return 2.2360679774998", 
+            "title": "Euclidean"
+        }, 
+        {
+            "location": "/math/distance/#manhattan", 
+            "text": "Class for calculation Manhattan distance.   To calculate Manhattan distance:  $a = [4, 6];\n$b = [2, 5];\n\n$manhattan = new Manhattan();\n$manhattan- distance($a, $b);\n// return 3", 
+            "title": "Manhattan"
+        }, 
+        {
+            "location": "/math/distance/#chebyshev", 
+            "text": "Class for calculation Chebyshev distance.   To calculate Chebyshev distance:  $a = [4, 6];\n$b = [2, 5];\n\n$chebyshev = new Chebyshev();\n$chebyshev- distance($a, $b);\n// return 2", 
+            "title": "Chebyshev"
+        }, 
+        {
+            "location": "/math/distance/#minkowski", 
+            "text": "Class for calculation Minkowski distance.   To calculate Minkowski distance:  $a = [4, 6];\n$b = [2, 5];\n\n$minkowski = new Minkowski();\n$minkowski- distance($a, $b);\n// return 2.080  You can provide the  lambda  parameter:  $a = [6, 10, 3];\n$b = [2, 5, 5];\n\n$minkowski = new Minkowski($lambda = 5);\n$minkowski- distance($a, $b);\n// return 5.300", 
+            "title": "Minkowski"
+        }, 
+        {
+            "location": "/math/distance/#custom-distance", 
+            "text": "To apply your own function of distance use  Distance  interface. Example  class CustomDistance implements Distance\n{\n    /**\n     * @param array $a\n     * @param array $b\n     *\n     * @return float\n     */\n    public function distance(array $a, array $b): float\n    {\n        $distance = [];\n        $count = count($a);\n\n        for ($i = 0; $i   $count; ++$i) {\n            $distance[] = $a[$i] * $b[$i];\n        }\n\n        return min($distance);    \n    }\n}", 
+            "title": "Custom distance"
+        }, 
+        {
+            "location": "/math/matrix/", 
+            "text": "Matrix\n\n\nClass that wraps PHP arrays to mathematical matrix.\n\n\nCreation\n\n\nTo create Matrix use simple arrays:\n\n\n$matrix = new Matrix([\n    [3, 3, 3],\n    [4, 2, 1],\n    [5, 6, 7],\n]);\n\n\n\n\nYou can also create Matrix (one dimension) from flat array:\n\n\n$flatArray = [1, 2, 3, 4];\n$matrix = Matrix::fromFlatArray($flatArray);\n\n\n\n\nMatrix data\n\n\nMethods for reading data from Matrix:\n\n\n$matrix-\ntoArray(); // cast matrix to PHP array\n$matrix-\ngetRows(); // rows count\n$matrix-\ngetColumns(); // columns count\n$matrix-\ngetColumnValues($column=4); // get values from given column\n\n\n\n\nDeterminant\n\n\nRead more about \nmatrix determinant\n.\n\n\n$matrix = new Matrix([\n    [3, 3, 3],\n    [4, 2, 1],\n    [5, 6, 7],\n]);\n\n$matrix-\ngetDeterminant();\n// return -3\n\n\n\n\nTranspose\n\n\nRead more about \nmatrix transpose\n.\n\n\n$matrix-\ntranspose();\n// return new Matrix \n\n\n\n\nMultiply\n\n\nMultiply Matrix by another Matrix.\n\n\n$matrix1 = new Matrix([\n    [1, 2, 3],\n    [4, 5, 6],\n]);\n\n$matrix2 = new Matrix([\n    [7, 8],\n    [9, 10],\n    [11, 12],\n]);\n\n$matrix1-\nmultiply($matrix2);\n\n// result $product = [\n//  [58, 64],\n//  [139, 154],\n//];\n\n\n\n\nDivide by scalar\n\n\nYou can divide Matrix by scalar value.\n\n\n$matrix-\ndivideByScalar(2);\n\n\n\n\nInverse\n\n\nRead more about \ninvertible matrix\n\n\n$matrix = new Matrix([\n    [3, 4, 2],\n    [4, 5, 5],\n    [1, 1, 1],\n]);\n\n$matrix-\ninverse();\n\n// result $inverseMatrix = [\n//    [0, -1, 5],\n//    [1 / 2, 1 / 2, -7 / 2],\n//    [-1 / 2, 1 / 2, -1 / 2],\n//];\n\n\n\n\n\nCross out\n\n\nCross out given row and column from Matrix.\n\n\n$matrix = new Matrix([\n    [3, 4, 2],\n    [4, 5, 5],\n    [1, 1, 1],\n]);\n\n$matrix-\ncrossOut(1, 1)\n\n// result $crossOuted = [\n//    [3, 2],\n//    [1, 1],\n//];", 
+            "title": "Matrix"
+        }, 
+        {
+            "location": "/math/matrix/#matrix", 
+            "text": "Class that wraps PHP arrays to mathematical matrix.", 
+            "title": "Matrix"
+        }, 
+        {
+            "location": "/math/matrix/#creation", 
+            "text": "To create Matrix use simple arrays:  $matrix = new Matrix([\n    [3, 3, 3],\n    [4, 2, 1],\n    [5, 6, 7],\n]);  You can also create Matrix (one dimension) from flat array:  $flatArray = [1, 2, 3, 4];\n$matrix = Matrix::fromFlatArray($flatArray);", 
+            "title": "Creation"
+        }, 
+        {
+            "location": "/math/matrix/#matrix-data", 
+            "text": "Methods for reading data from Matrix:  $matrix- toArray(); // cast matrix to PHP array\n$matrix- getRows(); // rows count\n$matrix- getColumns(); // columns count\n$matrix- getColumnValues($column=4); // get values from given column", 
+            "title": "Matrix data"
+        }, 
+        {
+            "location": "/math/matrix/#determinant", 
+            "text": "Read more about  matrix determinant .  $matrix = new Matrix([\n    [3, 3, 3],\n    [4, 2, 1],\n    [5, 6, 7],\n]);\n\n$matrix- getDeterminant();\n// return -3", 
+            "title": "Determinant"
+        }, 
+        {
+            "location": "/math/matrix/#transpose", 
+            "text": "Read more about  matrix transpose .  $matrix- transpose();\n// return new Matrix", 
+            "title": "Transpose"
+        }, 
+        {
+            "location": "/math/matrix/#multiply", 
+            "text": "Multiply Matrix by another Matrix.  $matrix1 = new Matrix([\n    [1, 2, 3],\n    [4, 5, 6],\n]);\n\n$matrix2 = new Matrix([\n    [7, 8],\n    [9, 10],\n    [11, 12],\n]);\n\n$matrix1- multiply($matrix2);\n\n// result $product = [\n//  [58, 64],\n//  [139, 154],\n//];", 
+            "title": "Multiply"
+        }, 
+        {
+            "location": "/math/matrix/#divide-by-scalar", 
+            "text": "You can divide Matrix by scalar value.  $matrix- divideByScalar(2);", 
+            "title": "Divide by scalar"
+        }, 
+        {
+            "location": "/math/matrix/#inverse", 
+            "text": "Read more about  invertible matrix  $matrix = new Matrix([\n    [3, 4, 2],\n    [4, 5, 5],\n    [1, 1, 1],\n]);\n\n$matrix- inverse();\n\n// result $inverseMatrix = [\n//    [0, -1, 5],\n//    [1 / 2, 1 / 2, -7 / 2],\n//    [-1 / 2, 1 / 2, -1 / 2],\n//];", 
+            "title": "Inverse"
+        }, 
+        {
+            "location": "/math/matrix/#cross-out", 
+            "text": "Cross out given row and column from Matrix.  $matrix = new Matrix([\n    [3, 4, 2],\n    [4, 5, 5],\n    [1, 1, 1],\n]);\n\n$matrix- crossOut(1, 1)\n\n// result $crossOuted = [\n//    [3, 2],\n//    [1, 1],\n//];", 
+            "title": "Cross out"
+        }, 
+        {
+            "location": "/math/set/", 
+            "text": "Set\n\n\nClass that wraps PHP arrays containing primitive types to mathematical sets.\n\n\nCreation\n\n\nTo create Set use flat arrays containing primitives only:\n\n\nuse \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2, 2, 3, 1.1, -1, -10]);\n$set-\ntoArray();\n// return [-10, -1, 1, 1.1, 2, 3]\n\n$set = new Set(['B', '', 'A']);\n$set-\ntoArray();\n// return ['', 'A', 'B']\n\n\n\n\nInjected array is sorted by SORT_ASC, duplicates are removed and index is rewritten. \n\n\nUnion\n\n\nCreate the union of two Sets:\n\n\nuse \\Phpml\\Math\\Set;\n\n$union = Set::union(new Set([1, 3]), new Set([1, 2]));\n$union-\ntoArray();\n//return [1, 2, 3]\n\n\n\n\nIntersection\n\n\nCreate the intersection of two Sets:\n\n\nuse \\Phpml\\Math\\Set;\n\n$intersection = Set::intersection(new Set(['A', 'C']), new Set(['B', 'C']));\n$intersection-\ntoArray();\n//return ['C']\n\n\n\n\nComplement\n\n\nCreate the set-theoretic difference of two Sets:\n\n\nuse \\Phpml\\Math\\Set;\n\n$difference = Set::difference(new Set(['A', 'B', 'C']), new Set(['A']));\n$union-\ntoArray();\n//return ['B', 'C']\n\n\n\n\nAdding elements\n\n\nuse \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2]);\n$set-\naddAll([3]);\n$set-\nadd(4);\n$set-\ntoArray();\n//return [1, 2, 3, 4]\n\n\n\n\nRemoving elements\n\n\nuse \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2]);\n$set-\nremoveAll([2]);\n$set-\nremove(1);\n$set-\ntoArray();\n//return []\n\n\n\n\nCheck membership\n\n\nuse \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2]);\n$set-\ncontainsAll([2, 3]);\n//return false\n$set-\ncontains(1);\n//return true\n\n\n\n\nCardinality\n\n\nuse \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2]);\n$set-\ncardinality();\n//return 2\n\n\n\n\nIs empty\n\n\nuse \\Phpml\\Math\\Set;\n\n$set = new Set();\n$set-\nisEmpty();\n//return true\n\n\n\n\nWorking with loops\n\n\nuse \\Phpml\\Math\\Set;\n\n$set = new Set(['A', 'B', 'C']);\n\nforeach($set as $element) {\n    echo \n$element, \n;\n}\n\n// echoes A, B, C", 
+            "title": "Set"
+        }, 
+        {
+            "location": "/math/set/#set", 
+            "text": "Class that wraps PHP arrays containing primitive types to mathematical sets.", 
+            "title": "Set"
+        }, 
+        {
+            "location": "/math/set/#creation", 
+            "text": "To create Set use flat arrays containing primitives only:  use \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2, 2, 3, 1.1, -1, -10]);\n$set- toArray();\n// return [-10, -1, 1, 1.1, 2, 3]\n\n$set = new Set(['B', '', 'A']);\n$set- toArray();\n// return ['', 'A', 'B']  Injected array is sorted by SORT_ASC, duplicates are removed and index is rewritten.", 
+            "title": "Creation"
+        }, 
+        {
+            "location": "/math/set/#union", 
+            "text": "Create the union of two Sets:  use \\Phpml\\Math\\Set;\n\n$union = Set::union(new Set([1, 3]), new Set([1, 2]));\n$union- toArray();\n//return [1, 2, 3]", 
+            "title": "Union"
+        }, 
+        {
+            "location": "/math/set/#intersection", 
+            "text": "Create the intersection of two Sets:  use \\Phpml\\Math\\Set;\n\n$intersection = Set::intersection(new Set(['A', 'C']), new Set(['B', 'C']));\n$intersection- toArray();\n//return ['C']", 
+            "title": "Intersection"
+        }, 
+        {
+            "location": "/math/set/#complement", 
+            "text": "Create the set-theoretic difference of two Sets:  use \\Phpml\\Math\\Set;\n\n$difference = Set::difference(new Set(['A', 'B', 'C']), new Set(['A']));\n$union- toArray();\n//return ['B', 'C']", 
+            "title": "Complement"
+        }, 
+        {
+            "location": "/math/set/#adding-elements", 
+            "text": "use \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2]);\n$set- addAll([3]);\n$set- add(4);\n$set- toArray();\n//return [1, 2, 3, 4]", 
+            "title": "Adding elements"
+        }, 
+        {
+            "location": "/math/set/#removing-elements", 
+            "text": "use \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2]);\n$set- removeAll([2]);\n$set- remove(1);\n$set- toArray();\n//return []", 
+            "title": "Removing elements"
+        }, 
+        {
+            "location": "/math/set/#check-membership", 
+            "text": "use \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2]);\n$set- containsAll([2, 3]);\n//return false\n$set- contains(1);\n//return true", 
+            "title": "Check membership"
+        }, 
+        {
+            "location": "/math/set/#cardinality", 
+            "text": "use \\Phpml\\Math\\Set;\n\n$set = new Set([1, 2]);\n$set- cardinality();\n//return 2", 
+            "title": "Cardinality"
+        }, 
+        {
+            "location": "/math/set/#is-empty", 
+            "text": "use \\Phpml\\Math\\Set;\n\n$set = new Set();\n$set- isEmpty();\n//return true", 
+            "title": "Is empty"
+        }, 
+        {
+            "location": "/math/set/#working-with-loops", 
+            "text": "use \\Phpml\\Math\\Set;\n\n$set = new Set(['A', 'B', 'C']);\n\nforeach($set as $element) {\n    echo  $element,  ;\n}\n\n// echoes A, B, C", 
+            "title": "Working with loops"
+        }, 
+        {
+            "location": "/math/statistic/", 
+            "text": "Statistic\n\n\nSelected statistical methods.\n\n\nCorrelation\n\n\nCorrelation coefficients are used in statistics to measure how strong a relationship is between two variables. There are several types of correlation coefficient.\n\n\nPearson correlation\n\n\nPearson\u2019s correlation or Pearson correlation is a correlation coefficient commonly used in linear regression.\n\n\nExample:\n\n\nuse Phpml\\Math\\Statistic\\Correlation;\n\n$x = [43, 21, 25, 42, 57, 59];\n$y = [99, 65, 79, 75, 87, 82];\n\nCorrelation::pearson($x, $y);\n// return 0.549\n\n\n\n\nMean\n\n\nArithmetic\n\n\nExample:\n\n\nuse Phpml\\Math\\Statistic\\Mean;\n\nMean::arithmetic([2, 5];\n// return 3.5\n\nMean::arithmetic([0.5, 0.5, 1.5, 2.5, 3.5];\n// return 1.7\n\n\n\n\nMedian\n\n\nExample:\n\n\nuse Phpml\\Math\\Statistic\\Mean;\n\nMean::median([5, 2, 6, 1, 3, 4]);\n// return 3.5\n\nMean::median([5, 2, 6, 1, 3]);\n// return 3\n\n\n\n\nMode\n\n\nExample:\n\n\nuse Phpml\\Math\\Statistic\\Mean;\n\nMean::mode([5, 2, 6, 1, 3, 4, 6, 6, 5]);\n// return 6\n\n\n\n\nStandard Deviation\n\n\nExample:\n\n\nuse Phpml\\Math\\Statistic\\StandardDeviation;\n\n$population = [5, 6, 8, 9];\nStandardDeviation::population($population)\n// return 1.825\n\n$population = [7100, 15500, 4400, 4400, 5900, 4600, 8800, 2000, 2750, 2550,  960, 1025];\nStandardDeviation::population($population)\n// return 4079", 
+            "title": "Statistic"
+        }, 
+        {
+            "location": "/math/statistic/#statistic", 
+            "text": "Selected statistical methods.", 
+            "title": "Statistic"
+        }, 
+        {
+            "location": "/math/statistic/#correlation", 
+            "text": "Correlation coefficients are used in statistics to measure how strong a relationship is between two variables. There are several types of correlation coefficient.", 
+            "title": "Correlation"
+        }, 
+        {
+            "location": "/math/statistic/#pearson-correlation", 
+            "text": "Pearson\u2019s correlation or Pearson correlation is a correlation coefficient commonly used in linear regression.  Example:  use Phpml\\Math\\Statistic\\Correlation;\n\n$x = [43, 21, 25, 42, 57, 59];\n$y = [99, 65, 79, 75, 87, 82];\n\nCorrelation::pearson($x, $y);\n// return 0.549", 
+            "title": "Pearson correlation"
+        }, 
+        {
+            "location": "/math/statistic/#mean", 
+            "text": "", 
+            "title": "Mean"
+        }, 
+        {
+            "location": "/math/statistic/#arithmetic", 
+            "text": "Example:  use Phpml\\Math\\Statistic\\Mean;\n\nMean::arithmetic([2, 5];\n// return 3.5\n\nMean::arithmetic([0.5, 0.5, 1.5, 2.5, 3.5];\n// return 1.7", 
+            "title": "Arithmetic"
+        }, 
+        {
+            "location": "/math/statistic/#median", 
+            "text": "Example:  use Phpml\\Math\\Statistic\\Mean;\n\nMean::median([5, 2, 6, 1, 3, 4]);\n// return 3.5\n\nMean::median([5, 2, 6, 1, 3]);\n// return 3", 
+            "title": "Median"
+        }, 
+        {
+            "location": "/math/statistic/#mode", 
+            "text": "Example:  use Phpml\\Math\\Statistic\\Mean;\n\nMean::mode([5, 2, 6, 1, 3, 4, 6, 6, 5]);\n// return 6", 
+            "title": "Mode"
+        }, 
+        {
+            "location": "/math/statistic/#standard-deviation", 
+            "text": "Example:  use Phpml\\Math\\Statistic\\StandardDeviation;\n\n$population = [5, 6, 8, 9];\nStandardDeviation::population($population)\n// return 1.825\n\n$population = [7100, 15500, 4400, 4400, 5900, 4600, 8800, 2000, 2750, 2550,  960, 1025];\nStandardDeviation::population($population)\n// return 4079", 
+            "title": "Standard Deviation"
+        }
+    ]
+}

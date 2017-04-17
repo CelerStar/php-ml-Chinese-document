@@ -1,11 +1,11 @@
 # ArrayDataset
 
-Helper class that holds data as PHP `array` type. Implements the `Dataset` interface which is used heavily in other classes.
+将数据保存为PHP  `array`类型的Helper类。实现 `Dataset`在其他类中大量使用的接口。
 
 ### Constructors Parameters
 
-* $samples - (array) of samples
-* $labels - (array) of labels
+* $samples - (array) 的样本
+* $labels - (array) 的标签
 
 ```
 $dataset = new ArrayDataset([[1, 1], [2, 1], [3, 2], [4, 1]], ['a', 'a', 'b', 'b']);
@@ -13,7 +13,7 @@ $dataset = new ArrayDataset([[1, 1], [2, 1], [3, 2], [4, 1]], ['a', 'a', 'b', 'b
 
 ### Samples and labels
 
-To get samples or labels you can use getters:
+要获取样品或标签，您可以使用 getters:
 
 ```
 $dataset->getSamples();
